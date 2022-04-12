@@ -1,11 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import { Nav, Navbar } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
 import { Component } from 'react';
 
 class Navigation extends Component {
     render() {
         return (
-            <div id='navigation'>
+            <div>
             <Nav defaultActiveKey="/home" as="ul">
             <Nav.Item as="li">
                 <Nav.Link href="/home">Active</Nav.Link>
