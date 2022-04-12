@@ -1,7 +1,8 @@
 import React from 'react'
 import { Component } from 'react'
-import { Container, Form, Button, Card} from 'react-bootstrap'
-// const { Configuration, OpenAIApi } = require ("openapi");
+import { Container, Form, Button, Card } from 'react-bootstrap'
+
+const { Configuration, OpenAIApi } = require('openai')
 
 class ProductDescription extends Component {
     constructor() {
@@ -20,10 +21,26 @@ class ProductDescription extends Component {
         formDataObj = Object.fromEntries(formData.entries())
         console.log(formDataObj.productName)
 
-        this.setState({
-            heading: `Product Description for: ${formDataObj.productName}`,
-            response: `...getting content from the AI`
+        // OpenAI davinci completion
+        const configuration = new Configuration({
+            apiKey: 'ENTER YOUR API KEY from HERE https://beta.openai.com/account/api-keys',
+        });
+        const openai = new OpenAIApi(configuration);
+
+        openai.createCompletion("text-davinci-002", {
+            prompt: `Write a persuasive and exciting product description for: ${formDataObj.productName}`,
+            temperature: 0.85,
+            max_tokens: 200,
+            top_p: 1,
+            frequency_penalty: 0,
+            presence_penalty: 0,
         })
+        .then((response) => {
+            this.setState({
+                heading: `Product Description for: ${formDataObj.productName}`,
+                response: `${response.data.choices[0].text}`
+            })
+        }); 
     }
 
     render () {
