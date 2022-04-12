@@ -6,7 +6,7 @@ This React app is a work in progress; It's functional, not beautiful.
 
 ## Purpose of this App 🤖
 
-To content via OpenAI's Generative Pre-trained Transformer 3 (GPT-3) (an autoregressive language model that uses deep learning to produce human-like text).
+To generate website or product copy via OpenAI's Generative Pre-trained Transformer 3 (GPT-3) (an autoregressive language model that uses deep learning to produce human-like text).
 
 ### Current app features ✨
 
