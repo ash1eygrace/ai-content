@@ -11,7 +11,8 @@ To content via OpenAI's Generative Pre-trained Transformer 3 (GPT-3) (an autoreg
 ### Current app features ✨
 
 - Functional Navigation
-- Two pages (Home & the Product Description Generator App)
+- Two pages (Home & Product Description)
+- Functional Product Description Generator using OpenAI's GPT-3 language model
 
 ### Product Description Generator 🛒
 
