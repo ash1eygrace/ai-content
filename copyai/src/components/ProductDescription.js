@@ -9,7 +9,7 @@ class ProductDescription extends Component {
         super()
         this.state = {
             heading: `The response from AI will show here`,
-            response: `...getting content from the AI`
+            response: `Product description from AI will show here.`
         }
     }
     
