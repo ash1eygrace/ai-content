@@ -51,12 +51,12 @@ class BlogIntro extends Component {
                 <Col xs={6} md={4} id="inputCol">
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="textArea">
-                            <Form.Label>Enter the blog post tile you want to generate an intro paragraph for: </Form.Label>
-                            <Form.Control as="textarea" name="blogTitle" placeholder="Enter title here" />
+                            <Form.Label>Blog post tile: </Form.Label>
+                            <Form.Control as="textarea" name="blogTitle" placeholder="e.g. How to Make a Commit with Git" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="textArea">
-                            <Form.Label>Enter SEO keywords to include in the paragraph (separate by commas).</Form.Label>
-                            <Form.Control as="textarea" name="context" placeholder="Enter keywords here" />
+                            <Form.Label>SEO keywords: </Form.Label>
+                            <Form.Control as="textarea" name="context" placeholder="e.g. Git, CLI, commit message" />
                         </Form.Group>
                         <Button variant="primary" size="md" type="submit">
                             Submit
