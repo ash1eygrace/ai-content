@@ -11,9 +11,9 @@ To generate website or product copy via OpenAI's Generative Pre-trained Transfor
 ### Current app features ✨
 
 - Functional Navigation
-- Three pages Home, Product Description, Blog Intro
-- Functional Product Description Generator using OpenAI's GPT-3 language model
-- Functional Blog Into Paragraph Generator using OpenAI's GPT-3 language model
+- Three pages: Home, Product Description, Blog Intro
+- Functional Product Description Generator
+- Functional Blog Into Paragraph Generator
 
 ### Product Description Generator 🛒
 
