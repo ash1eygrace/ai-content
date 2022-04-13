@@ -14,7 +14,7 @@ To generate website or product copy via OpenAI's Generative Pre-trained Transfor
 - Three pages: Home, Product Description, Company Bio, and Blog Intro
 - Functional Product Description Generator
 - Functional Company Bio Generator
-- Functional Blog Into Paragraph Generator
+- Functional Blog Intro Paragraph Generator
 
 ### Product Description Generator 🛒
 
