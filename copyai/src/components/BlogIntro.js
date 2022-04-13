@@ -57,7 +57,7 @@ class BlogIntro extends Component {
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Enter SEO keywords to include in the paragraph (separate by commas).</Form.Label>
-                            <Form.Control type="text" name="context" placeholder="Enter topics here" />
+                            <Form.Control type="text" name="context" placeholder="Enter keywords here" />
                         </Form.Group>
                         <Button variant="primary" size="lg" type="submit">
                             Submit
