@@ -48,7 +48,7 @@ class BlogIntro extends Component {
                 <Container>
                     <h1>Generate a Blog Intro with AI</h1>
                 <Row>
-                <Col xs={6} md={4}>
+                <Col xs={6} md={4} id="inputCol">
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="textArea">
                             <Form.Label>Enter the blog post tile you want to generate an intro paragraph for: </Form.Label>
