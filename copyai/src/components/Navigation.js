@@ -4,7 +4,7 @@ import { Component } from 'react';
 class Navigation extends Component {
     render() {
         return (
-            <div>
+            <div id="navigation">
             <Nav defaultActiveKey="/home" as="ul">
             <Nav.Item as="li">
                 <Nav.Link href="/">Home</Nav.Link>
