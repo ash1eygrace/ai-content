@@ -4,12 +4,12 @@ import { Container, Form, Button, Card } from 'react-bootstrap'
 
 const { Configuration, OpenAIApi } = require('openai')
 
-class ProductDescription extends Component {
+class BlogIntro extends Component {
     constructor() {
         super()
         this.state = {
-            heading: `The response from AI will show here`,
-            response: `...getting content from the AI`
+            heading: `The response from AI will show here.`,
+            response: `Intro paragraph from the AI will show here.`
         }
     }
     
@@ -19,16 +19,17 @@ class ProductDescription extends Component {
 
         const formData = new FormData(e.target),
         formDataObj = Object.fromEntries(formData.entries())
-        console.log(formDataObj.productName)
+        console.log(formDataObj.blogTitle)
+        console.log(formDataObj.context)
 
         // OpenAI davinci completion
         const configuration = new Configuration({
-            apiKey: 'API KEY GOES HERE',
+            apiKey: 'API KEY HERE',
         });
         const openai = new OpenAIApi(configuration);
 
         openai.createCompletion("text-davinci-002", {
-            prompt: `Write a persuasive and exciting product description for: ${formDataObj.productName}`,
+            prompt: `Write an uplifting and positive Blog intro paragraph for the blog title ${formDataObj.blogTitle} and include the keywords: ${formDataObj.context}`,
             temperature: 0.85,
             max_tokens: 200,
             top_p: 1,
@@ -37,7 +38,7 @@ class ProductDescription extends Component {
         })
         .then((response) => {
             this.setState({
-                heading: `Product Description for: ${formDataObj.productName}`,
+                heading: `Blog title for: ${formDataObj.blogTitle} with the keywords ${formDataObj.context}`,
                 response: `${response.data.choices[0].text}`
             })
         }); 
@@ -47,12 +48,16 @@ class ProductDescription extends Component {
         return (
             <div id="main-content">
                 <Container>
-                    <h1>Generate a Product Description with AI</h1>
+                    <h1>Generate a Blog Intro with AI</h1>
                     <br></br>
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Enter the product you want to generate a description for: </Form.Label>
-                            <Form.Control type="text" name="productName" placeholder="Enter product here" />
+                            <Form.Label>Enter the blog post tile you want to generate an intro paragraph for: </Form.Label>
+                            <Form.Control type="text" name="blogTitle" placeholder="Enter title here" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Enter SEO keywords to include in the paragraph (separate by commas).</Form.Label>
+                            <Form.Control type="text" name="context" placeholder="Enter topics here" />
                         </Form.Group>
                         <Button variant="primary" size="lg" type="submit">
                             Submit
@@ -74,4 +79,4 @@ class ProductDescription extends Component {
     }
 }
 
-export default ProductDescription;
+export default BlogIntro;

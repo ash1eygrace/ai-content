@@ -12,6 +12,9 @@ class Navigation extends Component {
             <Nav.Item as="li">
                 <Nav.Link href="product-description">Product Description</Nav.Link>
             </Nav.Item>
+            <Nav.Item as="li">
+                <Nav.Link href="blog-intro">Blog Intro</Nav.Link>
+            </Nav.Item>
             </Nav>
             </div>
         )
