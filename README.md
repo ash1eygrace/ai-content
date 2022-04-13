@@ -11,28 +11,28 @@ To generate website or product copy via OpenAI's Generative Pre-trained Transfor
 ### Current app features ✨
 
 - Functional Navigation
-- Three pages: Home, Product Description, Blog Intro
+- Three pages: Home, Product Description, Company Bio, and Blog Intro
 - Functional Product Description Generator
+- Functional Company Bio Generator
 - Functional Blog Into Paragraph Generator
 
 ### Product Description Generator 🛒
 
-1. Asks end-user to enter a product in a form and user clicks submit.
+1. Asks end-user to enter a product name and Purpose in a form and user clicks submit.
 2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
 3. OpenAI's API sends a response, and the app displays response from the API on page for the user.
 
+### Company Bio Generator 🛒
 
-https://user-images.githubusercontent.com/29527450/163058574-c437bdc5-6042-41b9-9426-2fb8cd8d88eb.mov
-
+1. Asks end-user to enter a Company name and Purpose in a form and user clicks submit.
+2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
+3. OpenAI's API sends a response, and the app displays response from the API on page for the user.
 
 ### SEO Optimized Blog Intro Paraphrage Generator 💻📝
 
 1. Asks end-user to input a blog post title and keywords separated by commas, and user click submit.
 2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
 3. OpenAI's API sends a response, and the app displays a response from the API for the user.
-
-
-https://user-images.githubusercontent.com/29527450/163203121-7b7094e7-95f2-4e6e-a27b-24e9ce727e93.mov
 
 
 ## Usage: 
