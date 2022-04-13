@@ -19,8 +19,6 @@ class BlogIntro extends Component {
 
         const formData = new FormData(e.target),
         formDataObj = Object.fromEntries(formData.entries())
-        console.log(formDataObj.blogTitle)
-        console.log(formDataObj.context)
 
         // OpenAI davinci completion
         const configuration = new Configuration({
