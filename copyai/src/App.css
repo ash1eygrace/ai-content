@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 768px) {
+  .col-6{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
