@@ -1,6 +1,6 @@
 import React from 'react'
 import { Component } from 'react'
-import { Container, Form, Button, Card } from 'react-bootstrap'
+import { Container, Form, Button, Card, Row, Col } from 'react-bootstrap'
 
 const { Configuration, OpenAIApi } = require('openai')
 
@@ -47,18 +47,20 @@ class ProductDescription extends Component {
         return (
             <div id="main-content">
                 <Container>
-                    <h1>Generate a Product Description with AI</h1>
-                    <br></br>
+                <h1>Generate a Product Description with AI</h1>
+                <Row>
+                <Col xs={6} md={4}>
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Enter the product you want to generate a description for: </Form.Label>
                             <Form.Control type="text" name="productName" placeholder="Enter product here" />
                         </Form.Group>
-                        <Button variant="primary" size="lg" type="submit">
+                        <Button variant="primary" size="md" type="submit">
                             Submit
                         </Button>
                     </Form>
-            <br></br>
+                </Col>
+                <Col xs={12} md={8}>
                     <Card className="text-center">
                         <Card.Header><h2>{this.state.heading}</h2></Card.Header>
                         <Card.Body>
@@ -68,6 +70,8 @@ class ProductDescription extends Component {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                </Col>
+                </Row>
                 </Container>
             </div>
         );

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Component } from 'react'
-import { Container, Form, Button, Card } from 'react-bootstrap'
+import { Container, Form, Button, Card, Row, Col } from 'react-bootstrap'
 
 const { Configuration, OpenAIApi } = require('openai')
 
@@ -47,7 +47,8 @@ class BlogIntro extends Component {
             <div id="main-content">
                 <Container>
                     <h1>Generate a Blog Intro with AI</h1>
-                    <br></br>
+                <Row>
+                <Col xs={6} md={4}>
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Enter the blog post tile you want to generate an intro paragraph for: </Form.Label>
@@ -57,11 +58,12 @@ class BlogIntro extends Component {
                             <Form.Label>Enter SEO keywords to include in the paragraph (separate by commas).</Form.Label>
                             <Form.Control type="text" name="context" placeholder="Enter keywords here" />
                         </Form.Group>
-                        <Button variant="primary" size="lg" type="submit">
+                        <Button variant="primary" size="md" type="submit">
                             Submit
                         </Button>
                     </Form>
-            <br></br>
+                </Col>
+                <Col xs={12} md={8}>
                     <Card className="text-center">
                         <Card.Header><h2>{this.state.heading}</h2></Card.Header>
                         <Card.Body>
@@ -71,6 +73,8 @@ class BlogIntro extends Component {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                </Col>
+                </Row>
                 </Container>
             </div>
         );
