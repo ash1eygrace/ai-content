@@ -51,9 +51,9 @@ class ProductDescription extends Component {
                 <Row>
                 <Col xs={6} md={4}>
                     <Form onSubmit={this.onFormSubmit}>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Group className="mb-3" controlId="textArea">
                             <Form.Label>Enter the product you want to generate a description for: </Form.Label>
-                            <Form.Control type="text" name="productName" placeholder="Enter product here" />
+                            <Form.Control as="textarea" name="productName" placeholder="Enter product here" />
                         </Form.Group>
                         <Button variant="primary" size="md" type="submit">
                             Submit

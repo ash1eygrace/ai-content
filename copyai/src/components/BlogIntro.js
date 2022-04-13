@@ -50,13 +50,13 @@ class BlogIntro extends Component {
                 <Row>
                 <Col xs={6} md={4}>
                     <Form onSubmit={this.onFormSubmit}>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Group className="mb-3" controlId="textArea">
                             <Form.Label>Enter the blog post tile you want to generate an intro paragraph for: </Form.Label>
-                            <Form.Control type="text" name="blogTitle" placeholder="Enter title here" />
+                            <Form.Control as="textarea" name="blogTitle" placeholder="Enter title here" />
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Group className="mb-3" controlId="textArea">
                             <Form.Label>Enter SEO keywords to include in the paragraph (separate by commas).</Form.Label>
-                            <Form.Control type="text" name="context" placeholder="Enter keywords here" />
+                            <Form.Control as="textarea" name="context" placeholder="Enter keywords here" />
                         </Form.Group>
                         <Button variant="primary" size="md" type="submit">
                             Submit
