@@ -22,11 +22,17 @@ To generate website or product copy via OpenAI's Generative Pre-trained Transfor
 2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
 3. OpenAI's API sends a response, and the app displays response from the API on page for the user.
 
+https://user-images.githubusercontent.com/29527450/163266347-45c67336-66c1-498e-ae87-05eeb9acee43.mov
+
+
 ### Company Bio Generator 🛒
 
 1. Asks end-user to enter a Company name and Purpose in a form and user clicks submit.
 2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
 3. OpenAI's API sends a response, and the app displays response from the API on page for the user.
+
+https://user-images.githubusercontent.com/29527450/163266426-441a5e1f-625b-4bcc-abc5-4f91cb714418.mov
+
 
 ### SEO Optimized Blog Intro Paraphrage Generator 💻📝
 
@@ -34,6 +40,8 @@ To generate website or product copy via OpenAI's Generative Pre-trained Transfor
 2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
 3. OpenAI's API sends a response, and the app displays a response from the API for the user.
 
+
+https://user-images.githubusercontent.com/29527450/163266483-bd2f72ce-05ee-458d-818a-af071c99c7ef.mov
 
 ## Usage: 
 
