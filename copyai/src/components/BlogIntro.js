@@ -46,9 +46,9 @@ class BlogIntro extends Component {
         return (
             <div id="main-content">
                 <Container>
-                    <h1>Blog Intro</h1>
                 <Row>
                 <Col xs={6} md={4} id="inputCol">
+                    <h1>Blog Intro</h1>
                     <p id="pageDescription">Enter your blog posts title and keywords that you'd like to include in your output. Click Submit and get a blog post introduction paragraph generated for you by AI. Think less and publish more.</p>
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="textArea">

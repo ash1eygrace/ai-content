@@ -47,9 +47,9 @@ class ProductDescription extends Component {
         return (
             <div id="main-content">
                 <Container>
-                <h1>Product Description</h1>
                 <Row>
                 <Col xs={6} md={4}>
+                <h1>Product Description</h1>
                 <p id="pageDescription">Enter your your product and a few keywords that you'd like to include in your output. Click Submit and get a product description generated for you by AI. Think less and sell more.</p>
 
                     <Form onSubmit={this.onFormSubmit}>
