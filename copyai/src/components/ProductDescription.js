@@ -55,7 +55,7 @@ class ProductDescription extends Component {
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="textArea">
                             <Form.Label>Product Name & Purpose:</Form.Label>
-                            <Form.Control as="textarea" name="productName" placeholder="e.g. Dunder Mifflin the best paper company " />
+                            <Form.Control as="textarea" name="productName" placeholder="e.g. Cat Nip will make your kitty love you" />
                         </Form.Group>
                         <Button variant="primary" size="md" type="submit">
                             Submit
