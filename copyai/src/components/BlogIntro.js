@@ -36,7 +36,7 @@ class BlogIntro extends Component {
         })
         .then((response) => {
             this.setState({
-                heading: `Blog title for: ${formDataObj.blogTitle} with the keywords ${formDataObj.context}`,
+                heading: `Blog intro for: ${formDataObj.blogTitle} with the keywords ${formDataObj.context}`,
                 response: `${response.data.choices[0].text}`
             })
         }); 

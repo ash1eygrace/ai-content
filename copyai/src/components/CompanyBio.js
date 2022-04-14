@@ -37,7 +37,7 @@ class CompanyBio extends Component {
         })
         .then((response) => {
             this.setState({
-                heading: `company bio for: ${formDataObj.companyName}`,
+                heading: `Company bio for: ${formDataObj.companyName}`,
                 response: `${response.data.choices[0].text}`
             })
         }); 
