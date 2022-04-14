@@ -40,7 +40,7 @@ p{
   background-color: #8484c3;
   padding: 1%;
 }
-.nav-item > a{
+.navbar-light .navbar-nav .nav-link{
   color: #F8F7F9;
 }
 .container{
