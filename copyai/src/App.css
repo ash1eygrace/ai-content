@@ -69,19 +69,18 @@ textarea{
 }
 #hero{
   min-height: 20vh;
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
   text-align: center;
 }
-#hero h2{
-  padding: 2%;
+#hero h1{
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 #hero p{
-  padding-left: 12%;
-  padding-right: 12%;
-}
-#hero h3{
-  margin-top: 4rem;
-  margin-bottom: 0rem;
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-bottom: 8%;
 }
 .col-sm-6{
   margin-bottom: 20px;
