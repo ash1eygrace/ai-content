@@ -52,7 +52,7 @@ class BlogIntro extends Component {
                     <p id="pageDescription">Enter your blog posts title and keywords that you'd like to include in your output. Click Submit and get a blog post introduction paragraph generated for you by AI. Think less and publish more.</p>
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="textArea">
-                            <Form.Label>Blog post tile: </Form.Label>
+                            <Form.Label>Blog post title: </Form.Label>
                             <Form.Control as="textarea" name="blogTitle" placeholder="e.g. How to Make a Commit with Git" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="textArea">
