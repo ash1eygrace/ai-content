@@ -6,9 +6,11 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Container>
-                <h1>Home Page</h1>
-                <p>Some content will go here</p>
+                <Container id="hero">
+                <h1>Content Generator</h1>
+                <h2>Out of ideas?</h2>
+                <p>We got you covered! With our content generator, you never have to think about what to say again. With a click of a button you'll get high quality copy straight from the top of the line AI for your products, company bio, or blog intro paragraphs.</p>
+                <h3>Available Generators:</h3>
                 </Container>
                 <Container>
                 <Row>
