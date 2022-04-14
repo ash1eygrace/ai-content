@@ -1,6 +1,6 @@
 import React from 'react'
 import { Component } from 'react'
-import { Container, Card, Row, Col } from 'react-bootstrap'
+import { Container, Card, Row, Col, Button } from 'react-bootstrap'
 
 class Home extends Component {
     render() {
@@ -21,6 +21,7 @@ class Home extends Component {
                             <Card.Title></Card.Title>
                             <Card.Text>
                             <p>Generate an awesome Product Description</p>
+                            <Button href="product-description">Product Description Generator</Button>
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -32,6 +33,7 @@ class Home extends Component {
                             <Card.Title></Card.Title>
                             <Card.Text>
                             <p>Generate an awesome Company Bio</p>
+                            <Button href="company-bio">Company Bio Generator</Button>
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -43,6 +45,7 @@ class Home extends Component {
                             <Card.Title></Card.Title>
                             <Card.Text>
                             <p>Generate an awesome Blog Into Paragraph</p>
+                            <Button href="blog-intro">Blog Intro Generator</Button>
                             </Card.Text>
                         </Card.Body>
                     </Card>
