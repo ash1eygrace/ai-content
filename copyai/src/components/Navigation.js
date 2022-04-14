@@ -12,7 +12,7 @@ class Navigation extends Component {
                     </Nav>
                     <Navbar.Toggle/>
                     <Navbar.Collapse>
-                    <Nav>
+                    <Nav className="ml-auto">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="product-description">Product Description</Nav.Link>
                         <Nav.Link href="company-bio">Company Bio</Nav.Link>
