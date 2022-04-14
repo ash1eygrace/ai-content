@@ -87,3 +87,7 @@ textarea{
 .col-sm-6{
   margin-bottom: 20px;
 }
+.col-sm-6 .card p{
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
