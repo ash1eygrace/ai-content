@@ -3,6 +3,9 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .btn-primary{
+    margin-bottom: 10%;
+  }
 }
 body {
 	background: #F8F7F9;
@@ -43,7 +46,6 @@ p{
 .navbar-light .navbar-nav .nav-link, .navbar-nav a.navbar-brand{
   color: #F8F7F9;
 }
-
 label.form-label{
   font-weight: bold;
 } 
