@@ -76,8 +76,8 @@ textarea{
   padding: 2%;
 }
 #hero p{
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 #hero h3{
   margin-top: 4rem;
@@ -89,4 +89,8 @@ textarea{
 .col-sm-6 .card p{
   margin-top: 35px;
   margin-bottom: 45px;
+}
+img.logo{
+  max-width: 204px;
+  border-radius: 9999px;
 }
