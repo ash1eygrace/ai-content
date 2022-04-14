@@ -14,7 +14,7 @@ class Home extends Component {
                 </Container>
                 <Container>
                 <Row>
-                    <Col>
+                    <Col sm={6}>
                     <Card className="text-center">
                         <Card.Header><h2>Product Description</h2></Card.Header>
                         <Card.Body>
@@ -26,7 +26,7 @@ class Home extends Component {
                         </Card.Body>
                     </Card>
                     </Col>
-                    <Col>
+                    <Col sm={6}>
                     <Card className="text-center">
                         <Card.Header><h2>Company Bio</h2></Card.Header>
                         <Card.Body>
@@ -38,7 +38,7 @@ class Home extends Component {
                         </Card.Body>
                     </Card>
                     </Col>
-                    <Col>
+                    <Col sm={6}>
                     <Card className="text-center">
                         <Card.Header><h2>Blog Intro</h2></Card.Header>
                         <Card.Body>
@@ -46,6 +46,17 @@ class Home extends Component {
                             <Card.Text>
                             <p>Generate an awesome Blog Into Paragraph</p>
                             <Button href="blog-intro">Blog Intro Generator</Button>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    </Col>
+                    <Col sm={6}>
+                    <Card className="text-center">
+                        <Card.Header><h2>Coming Soon</h2></Card.Header>
+                        <Card.Body>
+                            <Card.Title></Card.Title>
+                            <Card.Text>
+                            <p>More Awesome generators coming soon</p>
                             </Card.Text>
                         </Card.Body>
                     </Card>
