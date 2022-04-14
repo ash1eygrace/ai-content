@@ -5,7 +5,7 @@
   }
 }
 body {
-	background: #F2F4F3;
+	background: #F8F7F9;
 	font-family: 'Open Sans', sans-serif;
 }
 h1{
@@ -25,7 +25,7 @@ p{
 .btn:hover{
   box-shadow: 1px 1px 2px rgba(74, 48, 89, .4);
   cursor: pointer;
-	color: #F2F4F3;
+	color: #F8F7F9;
 	background-color: #dc7684;
 }
 .btn-primary{
@@ -41,7 +41,7 @@ p{
   padding: 1%;
 }
 .nav-item > a{
-  color: #F2F4F3;
+  color: #F8F7F9;
 }
 .container{
   padding: 0%;
@@ -59,10 +59,9 @@ textarea{
   padding-top: 4%;
   padding-bottom: 4%;
   background-color: #8484c3;
-  color: #F2F4F3;
+  color: #F8F7F9;
 }
 .card{
-  min-height: 100%;
   background-color: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .22);
   min-height: 79vh;
