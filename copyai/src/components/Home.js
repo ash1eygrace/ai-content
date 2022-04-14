@@ -6,8 +6,10 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <Container>
                 <h1>Home Page</h1>
                 <p>Some content will go here</p>
+                </Container>
                 <Container>
                 <Row>
                     <Col>
