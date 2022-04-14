@@ -16,10 +16,10 @@ h2{
 	font-size: 1.37rem;
 }
 p{
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 #main-content{
-  margin-top: 50px;
+  margin-top: 6%;
   color: #242325;
 }
 .btn:hover{
@@ -40,12 +40,10 @@ p{
   background-color: #8484c3;
   padding: 1%;
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link, .navbar-nav a.navbar-brand{
   color: #F8F7F9;
 }
-.container{
-  padding: 0%;
-}
+
 label.form-label{
   font-weight: bold;
 } 
