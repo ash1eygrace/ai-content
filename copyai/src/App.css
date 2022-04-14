@@ -68,10 +68,9 @@ textarea{
   border-radius: 0.25rem;
 }
 #hero{
-  min-height: 20vh;
   padding-top: 5%;
   padding-bottom: 3%;
-  text-align: center;
+  text-align: center; 
 }
 #hero h1{
   padding-top: 2%;
