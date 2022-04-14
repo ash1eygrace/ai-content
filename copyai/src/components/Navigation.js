@@ -8,7 +8,7 @@ class Navigation extends Component {
                 <Navbar expand="md">
                 <Container>
                     <Nav>
-                    <Navbar.Brand href="/">AI Content Generator</Navbar.Brand>
+                    <Navbar.Brand href="/">AshAI</Navbar.Brand>
                     </Nav>
                     <Navbar.Toggle/>
                     <Navbar.Collapse>
