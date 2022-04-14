@@ -23,7 +23,7 @@ class ProductDescription extends Component {
 
         // OpenAI davinci completion
         const configuration = new Configuration({
-            apiKey: 'API KEY GOES HERE',
+            apiKey: 'API KEY HERE',
         });
         const openai = new OpenAIApi(configuration);
 
@@ -55,7 +55,7 @@ class ProductDescription extends Component {
                     <Form onSubmit={this.onFormSubmit}>
                         <Form.Group className="mb-3" controlId="textArea">
                             <Form.Label>Product Name & Purpose:</Form.Label>
-                            <Form.Control as="textarea" name="productName" placeholder="e.g. Cat Nip will make your kitty love you" />
+                            <Form.Control as="textarea" name="productName" placeholder="e.g. ScoobySnacks will make your dog chill out" />
                         </Form.Group>
                         <Button variant="primary" size="md" type="submit">
                             Submit
