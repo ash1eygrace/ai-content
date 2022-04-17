@@ -50,7 +50,7 @@ https://user-images.githubusercontent.com/29527450/163480705-baf4bc60-1817-4a38-
 
 ## Usage: 
 
-You'll need node to run the react app locally & open the /components/ProductDesciption.js file and add your API key on line 26.
+You'll need node to run the react app locally & open the /components/ProductDesciption.js file and add your API key on line 26. It's important to note that this project is front-end only and you should not push it live to the web without securing your API key. 
 
 ## Tools Used: 🛠️
 
