@@ -22,7 +22,7 @@ class BlogIntro extends Component {
 
         // OpenAI davinci completion
         const configuration = new Configuration({
-            apiKey: 'API KEY HERE',
+            apiKey: 'API Key Here',
         });
         const openai = new OpenAIApi(configuration);
 
