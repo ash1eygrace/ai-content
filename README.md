@@ -48,9 +48,14 @@ https://user-images.githubusercontent.com/29527450/163480671-97f0698c-4b28-4d27-
 https://user-images.githubusercontent.com/29527450/163480705-baf4bc60-1817-4a38-b06d-7232cfffbe8e.mov
 
 
-## Usage: 
+## How to use: 
 
-You'll need node to run the react app locally & open the /components/ProductDesciption.js file and add your API key on line 26. It's important to note that this project is front-end only and you should not push it live to the web without securing your API key. 
+1. Check that Node.js is installed via Terminal by typing `node -v` if you don’t see a version [Instal Node.js](https://nodejs.org/en/ )
+2. Fork and clone this repo
+3. In Terminal open the directory ai-content/copyai 
+4. Type `npm install` to install any missing dependences. 
+5. Type `npm start` to start the server and run the app. 
+6. Obtain your OpenAI API key and add it to the component you want to use e.g. Open the /components/ProductDesciption.js file and add your API key on line 26. It's important to note that this project is completely front-end right now, and you should not push it live to the web without securing your API key. 
 
 ## Tools Used: 🛠️
 
