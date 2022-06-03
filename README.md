@@ -59,7 +59,7 @@ https://user-images.githubusercontent.com/29527450/163480705-baf4bc60-1817-4a38-
 
 ## Tools Used: 🛠️
 
-- https://docs.npmjs.com/cli/v7/commands/npm
-- https://reactjs.org/docs/create-a-new-react-app.html#create-react-app
-- https://react-bootstrap.github.io/components/alerts
+- [https://docs.npmjs.com/cli/v7/commands/npm](https://www.npmjs.com/)
+- https://reactjs.org
+- https://react-bootstrap.github.io
 - https://openai.com/ 
