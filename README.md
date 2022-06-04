@@ -66,8 +66,8 @@ https://user-images.githubusercontent.com/29527450/163480705-baf4bc60-1817-4a38-
 ai-content
 ├── node_modules
 ├── public
-│   ├── favicon.ico
-│   ├── index.html
+│   └──favicon.ico
+│   └── index.html
 │   └── manifest.json
 │   └── robots.txt
 ├── src
@@ -75,11 +75,11 @@ ai-content
 │   │   └──images
 │   │      └── logo.svg
 │   ├── components
-│   │   └── BlogIntro.js
-│   │   └── CompanyBio.js
-│   │   └── Home.js
-│   │   └── LinkedInJobDescription.js
-│   │   └── Navigation.js
+│   │   ├── BlogIntro.js
+│   │   ├── CompanyBio.js
+│   │   ├── Home.js
+│   │   ├── LinkedInJobDescription.js
+│   │   ├── Navigation.js
 │   │   └── ProductDescription.js
 │   ├── App.css
 │   ├── App.js
@@ -87,7 +87,7 @@ ai-content
 │   ├── Index.css
 │   ├── Index.js
 │   ├── reportWebVitals.js
-│   ├── setupTests.js
+│   └── setupTests.js
 ├── .gitignore
 ├── package.json
 └── README.md
