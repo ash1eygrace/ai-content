@@ -1,0 +1,1 @@
+{"ast":null,"code":"import createWithBsPrefix from './createWithBsPrefix';\nimport divWithClassName from './divWithClassName';\nvar DivStyledAsH5 = divWithClassName('h5');\nexport default createWithBsPrefix('offcanvas-title', {\n  Component: DivStyledAsH5\n});","map":null,"metadata":{},"sourceType":"module"}
