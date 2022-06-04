@@ -2,12 +2,11 @@
 
 ## Status: Under Construction 🚧
 
-This React app is a work in progress; It's functional, not beautiful. 
+This React app is a work in progress. 
 
 ## Purpose of this App 🤖
 
 To generate website or product copy via OpenAI's Generative Pre-trained Transformer 3 (GPT-3) an autoregressive language model that uses deep learning to produce human-like text.
-
 
 https://user-images.githubusercontent.com/29527450/163495243-dffda224-bfda-43f1-bc0c-c3f5b95fb7ef.mov
 
@@ -28,8 +27,6 @@ https://user-images.githubusercontent.com/29527450/163495243-dffda224-bfda-43f1-
 
 https://user-images.githubusercontent.com/29527450/163480646-4aaf9b7a-d867-42a3-9a63-1a09a7fad760.mov
 
-
-
 ### Company Bio Generator 🛒
 
 1. Asks end-user to enter a Company name and Purpose in a form and user clicks submit.
@@ -38,7 +35,6 @@ https://user-images.githubusercontent.com/29527450/163480646-4aaf9b7a-d867-42a3-
 
 https://user-images.githubusercontent.com/29527450/163480671-97f0698c-4b28-4d27-9d52-4bdc9b350d96.mov
 
-
 ### SEO Optimized Blog Intro Paragraph Generator 💻📝
 
 1. Asks end-user to input a blog post title and keywords separated by commas, and user click submit.
@@ -46,7 +42,6 @@ https://user-images.githubusercontent.com/29527450/163480671-97f0698c-4b28-4d27-
 3. OpenAI's API sends a response, and the app displays a response from the API for the user.
 
 https://user-images.githubusercontent.com/29527450/163480705-baf4bc60-1817-4a38-b06d-7232cfffbe8e.mov
-
 
 ## How to use: 
 
@@ -63,3 +58,34 @@ https://user-images.githubusercontent.com/29527450/163480705-baf4bc60-1817-4a38-
 - https://reactjs.org
 - https://react-bootstrap.github.io
 - https://openai.com/ 
+
+## Structure: 
+
+```
+ai-content
+├── node_modules
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+│   └── robots.txt
+├── src
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── assets
+│   │   └──images
+│   │      └── logo.svg
+│   ├── components
+│   │   └── BlogIntro.js
+│   │   └── CompanyBio.js
+│   │   └── Home.js
+│   │   └── LinkedInJobDescription.js
+│   │   └── Navigation.js
+│   │   └── ProductDescription.js
+│   ├── Index.css
+│   ├── Index.js
+├── .gitignore
+├── package.json
+└── README.md
+```
