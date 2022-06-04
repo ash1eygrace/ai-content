@@ -1,7 +1,7 @@
 import React from 'react'
 import { Component } from 'react'
 import { Container, Card, Row, Col, Button } from 'react-bootstrap'
-import Logo from '../assets/images/ash-photo.png'
+import Logo from '../assets/images/logo.png'
 
 class Home extends Component {
     render() {
