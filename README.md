@@ -71,9 +71,6 @@ ai-content
 │   └── manifest.json
 │   └── robots.txt
 ├── src
-│   ├── App.css
-│   ├── App.js
-│   ├── App.test.js
 │   ├── assets
 │   │   └──images
 │   │      └── logo.svg
@@ -84,8 +81,13 @@ ai-content
 │   │   └── LinkedInJobDescription.js
 │   │   └── Navigation.js
 │   │   └── ProductDescription.js
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
 │   ├── Index.css
 │   ├── Index.js
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
 ├── .gitignore
 ├── package.json
 └── README.md
