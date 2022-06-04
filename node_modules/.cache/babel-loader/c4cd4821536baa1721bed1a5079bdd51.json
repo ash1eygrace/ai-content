@@ -1,0 +1,1 @@
+{"ast":null,"code":"import createWithBsPrefix from './createWithBsPrefix';\nimport FigureImage from './FigureImage';\nimport FigureCaption from './FigureCaption';\nvar Figure = createWithBsPrefix('figure', {\n  Component: 'figure'\n});\nexport default Object.assign(Figure, {\n  Image: FigureImage,\n  Caption: FigureCaption\n});","map":null,"metadata":{},"sourceType":"module"}
