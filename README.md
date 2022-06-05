@@ -66,9 +66,10 @@ ai-content
 
 - Functional Navigation
 - Three pages: Home, Product Description, Company Bio, and Blog Intro
-- Functional Product Description Generator
-- Functional Company Bio Generator
-- Functional Blog Intro Paragraph Generator
+- Product Description Generator
+- Company Bio Generator
+- Blog Intro Paragraph Generator
+- LinkedIn Job Description Generator
 
 ### Product Description Generator 🛒
 
