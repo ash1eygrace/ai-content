@@ -43,7 +43,7 @@ https://user-images.githubusercontent.com/29527450/163480671-97f0698c-4b28-4d27-
 
 https://user-images.githubusercontent.com/29527450/163480705-baf4bc60-1817-4a38-b06d-7232cfffbe8e.mov
 
-## How to use: 
+## Getting Started: 
 
 1. Fork and clone this repo
 3. In Terminal open the directory ai-content
