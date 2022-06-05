@@ -14,11 +14,11 @@ https://user-images.githubusercontent.com/29527450/163495243-dffda224-bfda-43f1-
 
 ### Tools Used: 
 
-- https://nodejs.org/
-- https://npmjs.com
-- https://reactjs.org
-- https://react-bootstrap.github.io
-- https://openai.com/ 
+- [Node.js](https://nodejs.org/)
+- [npm](https://npmjs.com)
+- [React](https://reactjs.org)
+- [React Bootstrap](https://react-bootstrap.github.io)
+- [OpenAI's GPT-3 autoregressive language model](https://openai.com/)
 
 ### Installation: 
 1. Fork and clone this repo
