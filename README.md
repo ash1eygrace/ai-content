@@ -14,7 +14,8 @@ https://user-images.githubusercontent.com/29527450/163495243-dffda224-bfda-43f1-
 
 ### Tools Used: 
 
-- [https://npmjs.com](https://www.npmjs.com/)
+- https://nodejs.org/
+- https://npmjs.com
 - https://reactjs.org
 - https://react-bootstrap.github.io
 - https://openai.com/ 
