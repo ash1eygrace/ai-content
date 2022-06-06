@@ -65,8 +65,8 @@ ai-content
 
 ## Current app features ✨
 
-- Functional Navigation
-- Three pages: Home, Product Description, Company Bio, and Blog Intro
+- Navigation
+- Four pages: Home, Product Description, Company Bio, Blog Intro, and LinkedIn Bio
 - Product Description Generator
 - Company Bio Generator
 - Blog Intro Paragraph Generator
