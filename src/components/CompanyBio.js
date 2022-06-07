@@ -23,7 +23,7 @@ class CompanyBio extends Component {
 
         // OpenAI davinci completion
         const configuration = new Configuration({
-            apiKey: 'API KEY GOES HERE',
+            apiKey: process.env.REACT_APP_API_KEY,
         });
         const openai = new OpenAIApi(configuration);
 

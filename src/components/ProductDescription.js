@@ -23,7 +23,7 @@ class ProductDescription extends Component {
 
         // OpenAI davinci completion
         const configuration = new Configuration({
-            apiKey: 'API KEY HERE',
+            apiKey: process.env.REACT_APP_API_KEY,
         });
         const openai = new OpenAIApi(configuration);
 

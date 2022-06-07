@@ -27,7 +27,7 @@ https://user-images.githubusercontent.com/29527450/163495243-dffda224-bfda-43f1-
 6. Type `npm install` to install any missing dependences. 
 7. Type `npm start` to open the app via http://localhost:3000/
 8. Obtain your [OpenAI API key](https://openai.com/api/) via Log In > Personal > API keys > Create and Copy your Secret Key. 
-9. Add your API key to the component you want to use e.g. Open the /components/ProductDesciption.js file and add your API key on line 26. It's important to note that this project is completely front-end right now, and you should not push it live to the web without securing your API key. 
+9. In root add a `.env` file with an API key variable REACT_APP_API_KEY. e.g `REACT_APP_API_KEY='your api key here'`
 
 ## Structure: 
 

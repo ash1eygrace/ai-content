@@ -2,6 +2,7 @@ import React from 'react'
 import { Component } from 'react'
 import { Container, Form, Button, Card, Row, Col } from 'react-bootstrap'
 
+
 const { Configuration, OpenAIApi } = require('openai')
 
 class LinkedInJobDescription extends Component {
@@ -23,7 +24,7 @@ class LinkedInJobDescription extends Component {
 
         // OpenAI davinci completion
         const configuration = new Configuration({
-            apiKey: 'API KEY HERE',
+            apiKey: process.env.REACT_APP_API_KEY,
         });
         const openai = new OpenAIApi(configuration);
 
