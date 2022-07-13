@@ -44,40 +44,40 @@ class BlogIntro extends Component {
 
     render () {
         return (
-            <div id="main-content">
-                <Container>
-                <Row>
-                <Col xs={6} md={4} id="inputCol">
-                    <h1>Blog Intro</h1>
-                    <p id="pageDescription">Enter your blog posts title and keywords that you'd like to include in your output. Click Submit and get a blog post introduction paragraph generated for you by AI. Think less and publish more.</p>
-                    <Form onSubmit={this.onFormSubmit}>
-                        <Form.Group className="mb-3" controlId="textArea">
-                            <Form.Label>Blog post title: </Form.Label>
-                            <Form.Control as="textarea" name="blogTitle" placeholder="e.g. How to Make a Commit with Git" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="textArea">
-                            <Form.Label>SEO keywords: </Form.Label>
-                            <Form.Control as="textarea" name="context" placeholder="e.g. Git, CLI, commit message" />
-                        </Form.Group>
-                        <Button variant="primary" size="md" type="submit">
-                            Submit
-                        </Button>
-                    </Form>
-                </Col>
-                <Col xs={12} md={8}>
-                    <Card className="text-center">
-                        <Card.Header><h2>{this.state.heading}</h2></Card.Header>
-                        <Card.Body>
-                            <Card.Title></Card.Title>
-                            <Card.Text>
-                            <p>{this.state.response}</p>
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                </Row>
-                </Container>
-            </div>
+        <div id="main-content">
+        <Container>
+        <Row>
+        <Col xs={6} md={4} id="inputCol">
+        <h1>Blog Intro</h1>
+        <p id="pageDescription">Enter your blog posts title and keywords that you'd like to include in your output. Click Submit and get a blog post introduction paragraph generated for you by AI. Think less and publish more.</p>
+            
+        <Form onSubmit={this.onFormSubmit}>
+        <Form.Group className="mb-3" controlId="textArea">
+            <Form.Label>Blog post title: </Form.Label>
+            <Form.Control as="textarea" name="blogTitle" placeholder="e.g. How to Make a Commit with Git" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="textArea">
+            <Form.Label>SEO keywords: </Form.Label>
+            <Form.Control as="textarea" name="context" placeholder="e.g. Git, CLI, commit message" />
+        </Form.Group>
+        <Button variant="primary" size="md" type="submit">Submit</Button>
+        </Form>
+        </Col>
+
+        <Col xs={12} md={8}>
+        <Card className="text-center">
+            <Card.Header><h2>{this.state.heading}</h2></Card.Header>
+            <Card.Body>
+            <Card.Title></Card.Title>
+            <Card.Text>
+            <p>{this.state.response}</p>
+            </Card.Text>
+            </Card.Body>
+        </Card>
+        </Col>
+        </Row>
+        </Container>
+        </div>
         );
     }
 }
