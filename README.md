@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/29527450/163495243-dffda224-bfda-43f1-
 ### Installation: 
 1. Fork and clone this repo
 3. In Terminal open the directory ai-content
-4. Check that Node.js is installed via Terminal by typing `node -v` if you don’t see a version [Instal Node.js](https://nodejs.org/en/ )
+4. Check that Node.js is installed via Terminal by typing `node -v` if you don’t see a version [Install Node.js](https://nodejs.org/en/ )
 6. Type `npm install` to install any missing dependences. 
 7. Type `npm start` to open the app via http://localhost:3000/
 8. Obtain your [OpenAI API key](https://openai.com/api/) via Log In > Personal > API keys > Create and Copy your Secret Key. 
