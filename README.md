@@ -46,6 +46,7 @@ ai-content
 │   ├── components
 │   │   ├── BlogIntro.js
 │   │   ├── CompanyBio.js
+│   │   ├── Generators.js
 │   │   ├── Home.js
 │   │   ├── LinkedInJobDescription.js
 │   │   ├── Navigation.js
@@ -66,7 +67,7 @@ ai-content
 ## Current app features ✨
 
 - Navigation
-- Four pages: Home, Product Description, Company Bio, Blog Intro, and LinkedIn Bio
+- Generators List Page 
 - Product Description Generator
 - Company Bio Generator
 - Blog Intro Paragraph Generator
