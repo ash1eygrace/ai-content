@@ -2,9 +2,12 @@ import React from 'react'
 import { Component } from 'react'
 import { Container, Card, Row, Col, Button } from 'react-bootstrap'
 
+
 class Generators extends Component {
 render() {
     return (
+        <div id="generators">               
+        <h1>Content Generators</h1>
         <Container>
         <Row>
         <Col sm={6}>
@@ -53,6 +56,7 @@ render() {
         </Col>
     </Row>
     </Container>
+    </div> 
     )    
 }
 }

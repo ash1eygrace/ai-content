@@ -13,6 +13,7 @@ body {
 }
 h1{
   font-size: 2.3rem;
+  text-align: center; 
 }
 h2{
 	font-size: 1.37rem;
@@ -91,4 +92,12 @@ textarea{
 img.logo{
   max-width: 204px;
   border-radius: 9999px;
+}
+/* generators page */
+#generators{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#generators h1{
+  padding-bottom: 5%;
 }
