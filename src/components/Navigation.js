@@ -18,6 +18,7 @@ class Navigation extends Component {
                         <Nav.Link href="company-bio">Company Bio</Nav.Link>
                         <Nav.Link href="blog-intro">Blog Intro</Nav.Link>
                         <Nav.Link href="li-job-description">LinkedIn Job Description</Nav.Link>
+                        <Nav.Link href="generators">Generators</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

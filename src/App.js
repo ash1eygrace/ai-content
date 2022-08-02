@@ -10,7 +10,7 @@ import ProductDescription from './components/ProductDescription';
 import BlogIntro from './components/BlogIntro';
 import CompanyBio from './components/CompanyBio';
 import LinkedInJobDescription from './components/LinkedInJobDescription';
-
+import Generators from './components/Generators';
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
         <Route path="/blog-intro" element={<BlogIntro/>} />
         <Route path="/company-bio" element={<CompanyBio/>} />
         <Route path="/li-job-description" element={<LinkedInJobDescription/>} />
+        <Route path="/generators" element={<Generators/>} />
       </Routes>
 
       </div>
