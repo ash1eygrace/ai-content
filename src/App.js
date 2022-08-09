@@ -26,6 +26,7 @@ function App() {
         <Route path="/company-bio" element={<CompanyBio/>} />
         <Route path="/li-job-description" element={<LinkedInJobDescription/>} />
         <Route path="/generators" element={<Generators/>} />
+        <Route path="/tldr" element={<Tldr/>} />
       </Routes>
 
       </div>

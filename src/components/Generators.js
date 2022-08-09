@@ -54,6 +54,17 @@ render() {
             </Card.Body>
         </Card>
         </Col>
+        <Col sm={6}>
+        <Card className="text-center">
+            <Card.Header><h2>TL;DR</h2></Card.Header>
+            <Card.Body>
+                <Card.Text>
+                 <p>Summarize verbose text into a TL;DR.</p>
+                <Button href="li-job-description">TL;DR Generator</Button>
+                </Card.Text>
+            </Card.Body>
+        </Card>
+        </Col>
     </Row>
     </Container>
     </div> 
