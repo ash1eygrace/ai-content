@@ -50,7 +50,8 @@ ai-content
 │   │   ├── Home.js
 │   │   ├── LinkedInJobDescription.js
 │   │   ├── Navigation.js
-│   │   └── ProductDescription.js
+│   │   ├── ProductDescription.js
+│   │   └── Tldr.js
 │   ├── App.css
 │   ├── App.js
 │   ├── App.test.js
@@ -72,6 +73,10 @@ ai-content
 - Company Bio Generator
 - Blog Intro Paragraph Generator
 - LinkedIn Job Description Generator
+- TL;DR text summarizer
+
+
+## Examples: 
 
 ### Product Description Generator 🛒
 
