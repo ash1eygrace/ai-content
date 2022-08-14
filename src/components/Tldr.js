@@ -27,7 +27,7 @@ class Tldr extends Component {
         });
         const openai = new OpenAIApi(configuration);
 
-        const response = await openai.createCompletion({
+        openai.createCompletion("text-davinci-002", {
             model: "text-davinci-002",
             prompt: `${formDataObj.longParagraph}.\n\nTl;dr`,
             temperature: 0.7,
@@ -35,7 +35,7 @@ class Tldr extends Component {
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0,
-        });
+        })
         .then((response) => {
             this.setState({
                 heading: `TL;DR:`,

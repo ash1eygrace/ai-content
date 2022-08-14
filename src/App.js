@@ -11,6 +11,7 @@ import BlogIntro from './components/BlogIntro';
 import CompanyBio from './components/CompanyBio';
 import LinkedInJobDescription from './components/LinkedInJobDescription';
 import Generators from './components/Generators';
+import Tldr from './components/Tldr';
 
 
 function App() {
