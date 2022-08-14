@@ -28,17 +28,16 @@ class Tldr extends Component {
         const openai = new OpenAIApi(configuration);
 
         openai.createCompletion("text-davinci-002", {
-            model: "text-davinci-002",
             prompt: `${formDataObj.longParagraph}.\n\nTl;dr`,
-            temperature: 0.7,
-            max_tokens: 60,
+            temperature: 0.85,
+            max_tokens: 200,
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0,
         })
         .then((response) => {
             this.setState({
-                heading: `TL;DR:`,
+                heading: `Product Description for: ${formDataObj.productName}`,
                 response: `${response.data.choices[0].text}`
             })
         }); 
