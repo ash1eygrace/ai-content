@@ -43,7 +43,7 @@ class Brainstorm extends Component {
             })
         }); 
     }
-
+  
     render () {
         return (
         <div id="main-content">
@@ -52,6 +52,7 @@ class Brainstorm extends Component {
         <Col xs={6} md={4}>
         <h1>Brainstorm Ideas</h1>
         <p id="pageDescription">Enter your your content type and topic and get a list of ideas generated for you by AI. </p>
+        
 
         <Form onSubmit={this.onFormSubmit}>
         <Form.Group className="mb-3" controlId="textArea">
@@ -72,7 +73,7 @@ class Brainstorm extends Component {
         <Card.Body>
             <Card.Title></Card.Title>
             <Card.Text>
-            <p>{this.state.response}</p>
+            <p className="pre-wrap">{this.state.response}</p>
             </Card.Text>
         </Card.Body>
         </Card>

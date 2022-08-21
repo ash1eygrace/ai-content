@@ -101,3 +101,7 @@ img.logo{
 #generators h1{
   padding-bottom: 5%;
 }
+
+.pre-wrap{
+  white-space: pre-wrap;
+}
