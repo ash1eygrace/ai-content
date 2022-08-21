@@ -12,6 +12,17 @@ render() {
         <Row>
         <Col sm={6}>
         <Card className="text-center">
+            <Card.Header><h2>Generate Ideas</h2></Card.Header>
+            <Card.Body>
+                <Card.Text>
+                 <p>Stuck in the idea phase? Generate ideas</p>
+                <Button href="brainstorm">Brainstorm Generator</Button>
+                </Card.Text>
+            </Card.Body>
+        </Card>
+        </Col>
+        <Col sm={6}>
+        <Card className="text-center">
             <Card.Header><h2>Product Description</h2></Card.Header>
             <Card.Body>
                 <Card.Text>

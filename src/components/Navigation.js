@@ -20,6 +20,7 @@ class Navigation extends Component {
                         <Nav.Link href="li-job-description">LinkedIn Job Description</Nav.Link>
                         <Nav.Link href="generators">Generators</Nav.Link>
                         <Nav.Link href="tldr">TL;DR</Nav.Link>
+                        <Nav.Link href="brainstorm">Brainstorm</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
