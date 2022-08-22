@@ -12,7 +12,7 @@ import CompanyBio from './components/CompanyBio';
 import LinkedInJobDescription from './components/LinkedInJobDescription';
 import Generators from './components/Generators';
 import Tldr from './components/Tldr';
-import Brainstorm from './components/Brainstorm';
+import BlogIdeas from './components/BlogIdeas';
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         <Route path="/li-job-description" element={<LinkedInJobDescription/>} />
         <Route path="/generators" element={<Generators/>} />
         <Route path="/tldr" element={<Tldr/>} />
-        <Route path="/brainstorm" element={<Brainstorm/>} />
+        <Route path="/blogideas" element={<BlogIdeas/>} />
       </Routes>
 
       </div>
