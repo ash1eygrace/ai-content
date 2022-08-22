@@ -45,10 +45,10 @@ render() {
         </Col>
         <Col sm={6}>
         <Card className="text-center">
-            <Card.Header><h2>Blog Intro</h2></Card.Header>
+            <Card.Header><h2>SEO Blog Intro</h2></Card.Header>
             <Card.Body>
                 <Card.Text>
-                <p>Generate an awesome Blog Into Paragraph</p>
+                <p>Generate an awesome search engine optomized blog into paragraph</p>
                 <Button href="blog-intro">Blog Intro Generator</Button>
                 </Card.Text>
             </Card.Body>
