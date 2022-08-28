@@ -1,9 +1,7 @@
 import React from 'react'
 import { Component } from 'react'
 import { Container, Form, Button, Card, Row, Col } from 'react-bootstrap'
-
-
-const { Configuration, OpenAIApi } = require('openai')
+import { callAPI } from './OpenAIAPI.js';
 
 class LinkedInJobDescription extends Component {
     constructor() {
@@ -15,31 +13,17 @@ class LinkedInJobDescription extends Component {
     }
     
     onFormSubmit = e => {
-
         e.preventDefault()
 
         const formData = new FormData(e.target),
         formDataObj = Object.fromEntries(formData.entries())
 
+        const prompt = `Write an informative and knowledgeable LinkedIn job description in the first person past tense for the job title: ${formDataObj.jobTitle}`;
 
-        // OpenAI davinci completion
-        const configuration = new Configuration({
-            apiKey: process.env.REACT_APP_API_KEY,
-        });
-        const openai = new OpenAIApi(configuration);
-
-        openai.createCompletion("text-davinci-002", {
-            prompt: `Write an informative and knowledgeable LinkedIn job description in the first person past tense for the job title: ${formDataObj.jobTitle}`,
-            temperature: 0.85,
-            max_tokens: 200,
-            top_p: 1,
-            frequency_penalty: 0,
-            presence_penalty: 0,
-        })
-        .then((response) => {
+        callAPI(prompt).then((data) => {
             this.setState({
                 heading: `Linkedin job Description for: ${formDataObj.jobTitle}`,
-                response: `${response.data.choices[0].text}`
+                response: data
             })
         }); 
     }
