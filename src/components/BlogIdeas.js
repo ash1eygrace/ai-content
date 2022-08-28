@@ -1,9 +1,7 @@
 import React from 'react'
 import { Component } from 'react'
 import { Container, Form, Button, Card, Row, Col } from 'react-bootstrap'
-
-
-const { Configuration, OpenAIApi } = require('openai')
+import { callAPI } from './OpenAIAPI.js'
 
 class BlogIdeas extends Component {
     constructor() {
@@ -15,31 +13,17 @@ class BlogIdeas extends Component {
     }
     
     onFormSubmit = e => {
-
         e.preventDefault()
 
         const formData = new FormData(e.target),
         formDataObj = Object.fromEntries(formData.entries())
 
-
-        // OpenAI davinci completion
-        const configuration = new Configuration({
-            apiKey: process.env.REACT_APP_API_KEY,
-        });
-        const openai = new OpenAIApi(configuration);
-
-        openai.createCompletion("text-davinci-002", {
-            prompt: `Brainstorm blog post ideas for ${formDataObj.topic}:\n\n `,
-            temperature: 0.6,
-            max_tokens: 150,
-            top_p: 1,
-            frequency_penalty: 1,
-            presence_penalty: 1,
-        })
-        .then((response) => {
+        const prompt =  `Brainstorm an unordered list of blog post ideas for ${formDataObj.topic}:\n\n `;
+        
+        callAPI(prompt).then((data) => {
             this.setState({
-                heading: `Brainstorm some blog post ideas for: ${formDataObj.topic}`,
-                response: `${response.data.choices[0].text}`
+                heading: `Blog post ideas for: ${formDataObj.topic}`,
+                response: data
             })
         }); 
     }
