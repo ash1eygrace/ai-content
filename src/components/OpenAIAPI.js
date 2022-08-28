@@ -1,6 +1,5 @@
 const { Configuration, OpenAIApi } = require('openai')
 
-
 export async function callAPI(prompt) {
     // OpenAI davinci completion
     const configuration = new Configuration({
