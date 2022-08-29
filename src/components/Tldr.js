@@ -20,6 +20,10 @@ class Tldr extends Component {
 
         const prompt = `${formDataObj.longParagraph}.\n\nTl;dr`;
 
+        this.setState({
+            heading: `Thinking about how to shorten this paragraph...`,
+            response: `The AI is cutting fluffy text into a TL;DR.`
+        })
         callAPI(prompt).then((data) => {
             this.setState({
                 heading: `TL;DR for your text:`,
