@@ -20,6 +20,10 @@ class LinkedInJobDescription extends Component {
 
         const prompt = `Write an informative and knowledgeable LinkedIn job description in the first person past tense for the job title: ${formDataObj.jobTitle}`;
 
+        this.setState({
+            heading: `Thinking about your job description...`,
+            response: `Thinking of jobdescription for ${formDataObj.jobTitle}...`
+        })
         callAPI(prompt).then((data) => {
             this.setState({
                 heading: `Linkedin job Description for: ${formDataObj.jobTitle}`,
