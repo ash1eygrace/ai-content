@@ -8,7 +8,9 @@ This React app is a work in progress and is always being updated.
 
 To generate website, product copy, and brianstorm ideas with OpenAI's Generative Pre-trained Transformer 3 (GPT-3) an autoregressive language model that uses deep learning to produce human-like text.
 
-https://user-images.githubusercontent.com/29527450/163495243-dffda224-bfda-43f1-bc0c-c3f5b95fb7ef.mov
+
+https://user-images.githubusercontent.com/29527450/187236104-233cbfe6-fe08-48fe-81f7-646d72d3cf0c.mp4
+
 
 ## Getting Started 🛠️: 
 
