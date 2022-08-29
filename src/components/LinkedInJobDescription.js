@@ -22,7 +22,7 @@ class LinkedInJobDescription extends Component {
 
         this.setState({
             heading: `Thinking about your job description...`,
-            response: `Thinking of jobdescription for ${formDataObj.jobTitle}...`
+            response: `Thinking of job description for ${formDataObj.jobTitle}...`
         })
         callAPI(prompt).then((data) => {
             this.setState({
