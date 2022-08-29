@@ -21,6 +21,10 @@ class CompanyBio extends Component {
 
         const prompt = `Write a persuasive and exciting company bio for: ${formDataObj.companyName}`;
 
+        this.setState({
+            heading: `Thinking about your company bio...`,
+            response: `Thinking of company bio for ${formDataObj.companyName}...`
+        })
         callAPI(prompt).then((data) => {
             this.setState({
                 heading: `Company bio for: ${formDataObj.companyName}`,
