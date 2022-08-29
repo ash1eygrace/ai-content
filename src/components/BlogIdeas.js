@@ -20,6 +20,10 @@ class BlogIdeas extends Component {
 
         const prompt =  `Brainstorm an unordered list of blog post ideas for ${formDataObj.topic}:\n\n `;
         
+        this.setState({
+            heading: `Thinking of blog post ideas...`,
+            response: `Brainstorming blog posts ideas about ${formDataObj.topic}...`
+        })
         callAPI(prompt).then((data) => {
             this.setState({
                 heading: `Blog post ideas for: ${formDataObj.topic}`,
