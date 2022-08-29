@@ -2,11 +2,11 @@
 
 ## Status: Under Construction 🚧
 
-This React app is a work in progress. 
+This React app is a work in progress and is always being updated.  
 
 ## Purpose of this App 🤖
 
-To generate website or product copy via OpenAI's Generative Pre-trained Transformer 3 (GPT-3) an autoregressive language model that uses deep learning to produce human-like text.
+To generate website, product copy, and brianstorm ideas with OpenAI's Generative Pre-trained Transformer 3 (GPT-3) an autoregressive language model that uses deep learning to produce human-like text.
 
 https://user-images.githubusercontent.com/29527450/163495243-dffda224-bfda-43f1-bc0c-c3f5b95fb7ef.mov
 
@@ -44,12 +44,14 @@ ai-content
 │   │   └──images
 │   │      └── logo.svg
 │   ├── components
+│   │   ├── BlogIdeas.js
 │   │   ├── BlogIntro.js
 │   │   ├── CompanyBio.js
 │   │   ├── Generators.js
 │   │   ├── Home.js
 │   │   ├── LinkedInJobDescription.js
 │   │   ├── Navigation.js
+│   │   ├── OpenAIAPI.js
 │   │   ├── ProductDescription.js
 │   │   └── Tldr.js
 │   ├── App.css
@@ -64,7 +66,6 @@ ai-content
 └── README.md
 ```
 
-
 ## Current app features ✨
 
 - Navigation
@@ -74,7 +75,7 @@ ai-content
 - Blog Intro Paragraph Generator
 - LinkedIn Job Description Generator
 - TL;DR text summarizer
-
+- One async function to call OpenAPI
 
 ## Examples: 
 
