@@ -21,6 +21,10 @@ class ProductDescription extends Component {
 
         const prompt = `Write a persuasive and exciting product description for: ${formDataObj.productName}`;
 
+        this.setState({
+            heading: `AshAi is thinking about your product description...`,
+            response: `AshAi is coming up with a product description for ${formDataObj.productName}...`
+        })
         callAPI(prompt).then((data) => {
             this.setState({
                 heading: `Product Description for: ${formDataObj.productName}`,
