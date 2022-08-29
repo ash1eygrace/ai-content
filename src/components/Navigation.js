@@ -14,13 +14,7 @@ class Navigation extends Component {
                     <Navbar.Collapse>
                     <Nav className="ml-auto">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="product-description">Product Description</Nav.Link>
-                        <Nav.Link href="company-bio">Company Bio</Nav.Link>
-                        <Nav.Link href="blog-intro">Blog Intro</Nav.Link>
-                        <Nav.Link href="li-job-description">LinkedIn Job Description</Nav.Link>
                         <Nav.Link href="generators">Generators</Nav.Link>
-                        <Nav.Link href="tldr">TL;DR</Nav.Link>
-                        <Nav.Link href="blogideas">Blog Post Ideas</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
