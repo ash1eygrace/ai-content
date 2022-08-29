@@ -20,6 +20,10 @@ class BlogIntro extends Component {
 
         const prompt = `Write an uplifting and positive Blog intro paragraph for the blog title ${formDataObj.blogTitle} and include the keywords: ${formDataObj.context}`;
  
+        this.setState({
+            heading: `Writing your blog intro...`,
+            response: `Writing blog intro for ${formDataObj.blogTitle}...`
+        })
         callAPI(prompt).then((data) => {
             this.setState({
                 heading: `Blog intro for: ${formDataObj.blogTitle} with the keywords ${formDataObj.context}`,
