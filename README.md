@@ -37,14 +37,14 @@ https://user-images.githubusercontent.com/29527450/187236104-233cbfe6-fe08-48fe-
 ai-content
 ├── node_modules
 ├── public
-│   └──favicon.ico
-│   └── index.html
+│   ├── _redirects
+│   ├── favicon.ico
+│   ├── index.html
 │   └── manifest.json
-│   └── robots.txt
 ├── src
 │   ├── assets
 │   │   └──images
-│   │      └── logo.svg
+│   │      └── logo.png
 │   ├── components
 │   │   ├── BlogIdeas.js
 │   │   ├── BlogIntro.js
@@ -58,11 +58,8 @@ ai-content
 │   │   └── Tldr.js
 │   ├── App.css
 │   ├── App.js
-│   ├── App.test.js
 │   ├── Index.css
-│   ├── Index.js
-│   ├── reportWebVitals.js
-│   └── setupTests.js
+│   └── Index.js
 ├── .gitignore
 ├── package.json
 └── README.md
