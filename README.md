@@ -60,9 +60,7 @@ ai-content
 │   ├── App.js
 │   ├── App.test.js
 │   ├── Index.css
-│   ├── Index.js
-│   ├── reportWebVitals.js
-│   └── setupTests.js
+│   └── Index.js
 ├── .gitignore
 ├── package.json
 └── README.md
