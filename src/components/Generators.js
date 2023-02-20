@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Card, Row, Col, Button } from 'react-bootstrap'
+
 function RenderGenerators() {
     const generators = [
         {
