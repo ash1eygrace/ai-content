@@ -1,9 +1,5 @@
 # ai-content
 
-## Status: Under Construction 🚧
-
-This React app is a work in progress and is always being updated.  
-
 ## Purpose of this App 🤖
 
 To generate website, product copy, and brianstorm ideas with OpenAI's Generative Pre-trained Transformer 3 (GPT-3) an autoregressive language model that uses deep learning to produce human-like text.
