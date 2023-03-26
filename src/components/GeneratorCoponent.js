@@ -6,10 +6,9 @@ import { callAPI } from './OpenAIAPI.js';
 class GeneratorComponent extends Component {
   constructor(props) {
     super(props);
-    const { heading = `AI Generated Response:`, response1 } = props.generatorData;
     this.state = {
-      heading,
-      response: response1,
+      heading: 'AI Generated Response:',
+      response: this.props.generatorData.response1,
     };
   }
 
@@ -21,12 +20,12 @@ class GeneratorComponent extends Component {
 
     const { response2 = '', response3 = '' } = this.props.generatorData;
     this.setState({
-      heading: response2 + formData.get(this.props.generatorData.formName) + '...',
+      heading: response2 + formData.get(this.props.generatorData.formName),
       response: '',
     });
     callAPI(prompt).then((data) => {
       this.setState({
-        heading: `${response3}${formData.get(this.props.generatorData.formName)}`,
+        heading: response3 + formData.get(this.props.generatorData.formName),
         response: data,
       });
     });
@@ -34,6 +33,8 @@ class GeneratorComponent extends Component {
 
   render() {
     const { h1, description, formLabel, formName, placeholder } = this.props.generatorData;
+    const { heading, response } = this.state;
+
     return (
       <div id="main-content">
         <Container>
@@ -56,12 +57,12 @@ class GeneratorComponent extends Component {
             <Col xs={12} md={8}>
               <Card className="text-center">
                 <Card.Header>
-                  <h2>{this.state.heading}</h2>
+                  <h2>{heading}</h2>
                 </Card.Header>
                 <Card.Body>
-                  {this.state.response && (
+                  {response && (
                     <Card.Text>
-                      <p className="pre-wrap">{this.state.response}</p>
+                      <p className="pre-wrap">{response}</p>
                     </Card.Text>
                   )}
                 </Card.Body>
@@ -75,3 +76,4 @@ class GeneratorComponent extends Component {
 }
 
 export default GeneratorComponent;
+
