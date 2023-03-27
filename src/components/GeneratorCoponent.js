@@ -5,6 +5,7 @@ import { callAPI } from './OpenAIAPI.js';
 const GeneratorComponent = (props) => {
   const [heading, setHeading] = useState('AI Generated Response:');
   const [response, setResponse] = useState(props.generatorData.response1);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const onFormSubmit = (e) => {
     e.preventDefault();
@@ -16,8 +17,12 @@ const GeneratorComponent = (props) => {
     setHeading(response2 + formData.get(props.generatorData.formName));
     setResponse('');
     callAPI(prompt).then((data) => {
-      setHeading(response3 + formData.get(props.generatorData.formName));
-      setResponse(data);
+      if (data.error) {
+        setErrorMessage(data.message);
+      } else {
+        setHeading(response3 + formData.get(props.generatorData.formName));
+        setResponse(data);
+      }
     });
   };
 
@@ -30,7 +35,6 @@ const GeneratorComponent = (props) => {
           <Col xs={6} md={4}>
             <h1>{h1}</h1>
             <p id="pageDescription">{description}</p>
-
             <Form onSubmit={onFormSubmit}>
               <Form.Group controlId="textArea" className="mb-3">
                 <Form.Label>{formLabel}</Form.Label>
@@ -48,6 +52,7 @@ const GeneratorComponent = (props) => {
                 <h2>{heading}</h2>
               </Card.Header>
               <Card.Body>
+                {errorMessage && <p variant="danger" className="mt-3">{errorMessage}</p>}
                 {response && (
                   <Card.Text>
                     <p className="pre-wrap">{response}</p>

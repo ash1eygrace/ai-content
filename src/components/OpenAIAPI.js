@@ -20,7 +20,8 @@ export async function callAPI(prompt) {
         return `${response.data.choices[0].text}`
     })
     .catch(error => {
-        console.log(error)
+        console.log(error);
+        return { error: true, message: "Sorry, there was an error with your request. Please make sure if your API Key is valid and try again later. If the issue persists, try again later." };
     })
     
     return await openAPICall;
