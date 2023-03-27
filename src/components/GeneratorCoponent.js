@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import { Container, Form, Button, Card, Row, Col } from 'react-bootstrap'
 import { callAPI } from './OpenAIAPI.js';
 
+import CopyToClipboard from './CopyToClipboard.js';
+
 const GeneratorComponent = (props) => {
   const [heading, setHeading] = useState('AI Generated Response:');
   const [response, setResponse] = useState(props.generatorData.response1);
   const [errorMessage, setErrorMessage] = useState('');
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   const onFormSubmit = (e) => {
     e.preventDefault();
@@ -16,12 +19,14 @@ const GeneratorComponent = (props) => {
     const { response2 = '', response3 = '' } = props.generatorData;
     setHeading(response2 + formData.get(props.generatorData.formName));
     setResponse('');
+    setErrorMessage('');
     callAPI(prompt).then((data) => {
       if (data.error) {
         setErrorMessage(data.message);
       } else {
         setHeading(response3 + formData.get(props.generatorData.formName));
         setResponse(data);
+        setDataLoaded(true);
       }
     });
   };
@@ -53,11 +58,14 @@ const GeneratorComponent = (props) => {
               </Card.Header>
               <Card.Body>
                 {errorMessage && <p variant="danger" className="mt-3">{errorMessage}</p>}
-                {response && (
-                  <Card.Text>
-                    <p className="pre-wrap">{response}</p>
-                  </Card.Text>
-                )}
+                {dataLoaded && response ? (
+                  <div className="response-container">
+                    <Card.Text>
+                      <p className="pre-wrap">{response}</p>
+                    </Card.Text>
+                    {response && <CopyToClipboard text={response} />}
+                  </div>
+                ) : null}
               </Card.Body>
             </Card>
           </Col>

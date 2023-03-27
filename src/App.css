@@ -105,3 +105,15 @@ img.logo{
 .pre-wrap{
   white-space: pre-wrap;
 }
+
+.copy-button {
+  color: #fff;
+  background-color: #5cb0a2;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.response-container {
+  margin-bottom: 60px;;
+}
