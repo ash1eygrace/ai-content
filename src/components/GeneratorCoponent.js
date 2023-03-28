@@ -16,15 +16,14 @@ const GeneratorComponent = (props) => {
     const formData = new FormData(e.target);
     const prompt = `${props.generatorData.prompt}${formData.get(props.generatorData.formName)}`;
 
-    const { response2 = '', response3 = '' } = props.generatorData;
-    setHeading(response2 + formData.get(props.generatorData.formName));
+    setHeading(`Thinking about your ${props.generatorData.title} now...`);
     setResponse('');
     setErrorMessage('');
     callAPI(prompt).then((data) => {
       if (data.error) {
         setErrorMessage(data.message);
       } else {
-        setHeading(response3 + formData.get(props.generatorData.formName));
+        setHeading(`Here's your ${props.generatorData.title}:`);
         setResponse(data);
         setDataLoaded(true);
       }
