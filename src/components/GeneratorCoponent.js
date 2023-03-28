@@ -31,7 +31,7 @@ const GeneratorComponent = (props) => {
     });
   };
 
-  const { title, description, formLabel, formName, placeholder } = props.generatorData;
+  const { title, description2, formLabel, formName, placeholder } = props.generatorData;
 
   return (
     <div id="main-content">
@@ -39,7 +39,7 @@ const GeneratorComponent = (props) => {
         <Row>
           <Col xs={6} md={4}>
             <h1>{title}</h1>
-            <p id="pageDescription">{description}</p>
+            <p id="pageDescription">{description2}</p>
             <Form onSubmit={onFormSubmit}>
               <Form.Group controlId="textArea" className="mb-3">
                 <Form.Label>{formLabel}</Form.Label>
