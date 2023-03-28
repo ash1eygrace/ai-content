@@ -31,14 +31,14 @@ const GeneratorComponent = (props) => {
     });
   };
 
-  const { h1, description, formLabel, formName, placeholder } = props.generatorData;
+  const { title, description, formLabel, formName, placeholder } = props.generatorData;
 
   return (
     <div id="main-content">
       <Container>
         <Row>
           <Col xs={6} md={4}>
-            <h1>{h1}</h1>
+            <h1>{title}</h1>
             <p id="pageDescription">{description}</p>
             <Form onSubmit={onFormSubmit}>
               <Form.Group controlId="textArea" className="mb-3">
