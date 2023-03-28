@@ -6,7 +6,7 @@ import CopyToClipboard from './CopyToClipboard.js';
 
 const GeneratorComponent = (props) => {
   const [heading, setHeading] = useState('AI Generated Response:');
-  const [response, setResponse] = useState(props.generatorData.response1);
+  const [response, setResponse] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [dataLoaded, setDataLoaded] = useState(false);
 
@@ -57,16 +57,22 @@ const GeneratorComponent = (props) => {
                 <h2>{heading}</h2>
               </Card.Header>
               <Card.Body>
-                {errorMessage && <p variant="danger" className="mt-3">{errorMessage}</p>}
-                {dataLoaded && response ? (
+                {errorMessage ? (
+                  <p variant="danger" className="mt-3">{errorMessage}</p>
+                ) : dataLoaded && response ? (
                   <div className="response-container">
                     <Card.Text>
                       <p className="pre-wrap">{response}</p>
                     </Card.Text>
                     {response && <CopyToClipboard text={response} />}
                   </div>
-                ) : null}
+                ) : (
+                  <Card.Text>
+                    The Response from the AI for your {title} will show here.
+                  </Card.Text>
+                )}
               </Card.Body>
+
             </Card>
           </Col>
         </Row>
