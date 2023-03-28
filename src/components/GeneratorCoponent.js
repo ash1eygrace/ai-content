@@ -6,7 +6,7 @@ import CopyToClipboard from './CopyToClipboard.js';
 
 const GeneratorComponent = (props) => {
   const [heading, setHeading] = useState('AI Generated Response:');
-  const [response, setResponse] = useState(props.generatorData.response1);
+  const [response, setResponse] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [dataLoaded, setDataLoaded] = useState(false);
 
@@ -16,30 +16,29 @@ const GeneratorComponent = (props) => {
     const formData = new FormData(e.target);
     const prompt = `${props.generatorData.prompt}${formData.get(props.generatorData.formName)}`;
 
-    const { response2 = '', response3 = '' } = props.generatorData;
-    setHeading(response2 + formData.get(props.generatorData.formName));
+    setHeading(`Thinking about your ${props.generatorData.title} now...`);
     setResponse('');
     setErrorMessage('');
     callAPI(prompt).then((data) => {
       if (data.error) {
         setErrorMessage(data.message);
       } else {
-        setHeading(response3 + formData.get(props.generatorData.formName));
+        setHeading(`Here's your ${props.generatorData.title}:`);
         setResponse(data);
         setDataLoaded(true);
       }
     });
   };
 
-  const { h1, description, formLabel, formName, placeholder } = props.generatorData;
+  const { title, description2, formLabel, formName, placeholder } = props.generatorData;
 
   return (
     <div id="main-content">
       <Container>
         <Row>
           <Col xs={6} md={4}>
-            <h1>{h1}</h1>
-            <p id="pageDescription">{description}</p>
+            <h1>{title}</h1>
+            <p id="pageDescription">{description2}</p>
             <Form onSubmit={onFormSubmit}>
               <Form.Group controlId="textArea" className="mb-3">
                 <Form.Label>{formLabel}</Form.Label>
@@ -57,16 +56,22 @@ const GeneratorComponent = (props) => {
                 <h2>{heading}</h2>
               </Card.Header>
               <Card.Body>
-                {errorMessage && <p variant="danger" className="mt-3">{errorMessage}</p>}
-                {dataLoaded && response ? (
+                {errorMessage ? (
+                  <p variant="danger" className="mt-3">{errorMessage}</p>
+                ) : dataLoaded && response ? (
                   <div className="response-container">
                     <Card.Text>
                       <p className="pre-wrap">{response}</p>
                     </Card.Text>
                     {response && <CopyToClipboard text={response} />}
                   </div>
-                ) : null}
+                ) : (
+                  <Card.Text>
+                    The Response from the AI for your {title} will show here.
+                  </Card.Text>
+                )}
               </Card.Body>
+
             </Card>
           </Col>
         </Row>
