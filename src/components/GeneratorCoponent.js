@@ -28,7 +28,7 @@ const GeneratorComponent = (props) => {
       if (data.error) {
         setErrorMessage(data.message);
       } else {
-        setHeading(`Here's your ${props.generatorData.title}:`);
+        setHeading(`Your AI Generated ${props.generatorData.title}:`);
         setResponse(data);
       }
       setDataLoaded(true);
