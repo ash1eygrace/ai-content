@@ -63,7 +63,7 @@ export const GeneratorList = [
         id: 6,
         title: 'TL;DR',
         description: 'Summarize verbose text into a TL;DR.',
-        link: 'li-job-description',
+        link: 'tldr',
         featured: true,
         prompt: 'Write a TL;DR for the following text: ',
         description2: 'Enter your your verbose text, click submit, and get a TL;DR generated for you by AI.',
