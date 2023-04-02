@@ -98,8 +98,6 @@ label.form-label {
   background-color: var(--secondary-color);
   border: none;
   position: absolute;
-  width: 40px;
-  height: 40px;
   bottom: 10px;
   right: 10px;
 }
