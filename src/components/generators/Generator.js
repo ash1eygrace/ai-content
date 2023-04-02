@@ -39,7 +39,7 @@ const GeneratorComponent = (props) => {
   const { title, description2, formLabel, formName, placeholder } = props.generatorData;
 
   return (
-    <div id="main-content">
+    <div id="main">
       <Container>
         <Row>
           <Col xs={6} md={4}>
