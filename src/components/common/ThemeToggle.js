@@ -5,8 +5,12 @@ const ThemeToggle = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <button onClick={toggleTheme}>
-      {isDarkMode ? 'Switch to Day Mode' : 'Switch to Night Mode'}
+    <button onClick={toggleTheme} className="theme-toggle">
+      {isDarkMode ? (
+        <i className="fas fa-sun"></i>
+      ) : (
+        <i className="fas fa-moon"></i>
+      )}
     </button>
   );
 };

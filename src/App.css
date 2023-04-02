@@ -141,3 +141,22 @@ label.form-label {
   margin-top: 35px;
   margin-bottom: 45px;
 }
+
+.theme-toggle {
+  background-color: var(--background-color);
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 24px;
+  padding: 10x 10px;
+  color: var(--text-color);
+  border-radius: 5px;
+  transition: color 0.2s;
+}
+button:focus {
+  outline: none;
+}
+
+.theme-toggle .fas.fa-sun {
+  color: #F4D35E;
+}
