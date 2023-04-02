@@ -14,8 +14,6 @@
   --dark-btn-hover-color: #dc7684;
 }
 
-
-
 .dark-mode {
   --primary-color: var(--dark-primary-color);
   --secondary-color: var(--dark-secondary-color);
@@ -65,7 +63,6 @@ p {
 }
 /*Home Page*/
 #hero {
-  padding-top: 5%;
   padding-bottom: 3%;
   text-align: center;
 }
