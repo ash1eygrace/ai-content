@@ -11,14 +11,6 @@ import GeneratorComponent from './components/generators/Generator';
 import { generatorList } from './data/generatorList';
 
 function App() {
-  const blogIdeasData = generatorList[0];
-  const productDescriptionData = generatorList[1];
-  const companyBioData = generatorList[2];
-  const seoBlogIntroData = generatorList[3];
-  const linkedInJobDescriptionData = generatorList[4];
-  const tldrData = generatorList[5];
- 
-
   return (
     <Router>
       <div className="App">
@@ -26,12 +18,13 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/generators" element={<Generators />} />
-          <Route path="/blog-ideas" element={<GeneratorComponent generatorData={blogIdeasData} />} />
-          <Route path="/product-description" element={<GeneratorComponent generatorData={productDescriptionData} />}/>
-          <Route path="/company-bio" element={<GeneratorComponent generatorData={companyBioData} />}/>
-          <Route path="/seo-blog-intro" element={<GeneratorComponent generatorData={seoBlogIntroData} />}/>
-          <Route path="/linkedin-job-description" element={<GeneratorComponent generatorData={linkedInJobDescriptionData} />}/>
-          <Route path="/tldr" element={<GeneratorComponent generatorData={tldrData} />}/>
+          {generatorList.map((generator) => (
+            <Route
+              key={generator.id}
+              path={`/${generator.link}`}
+              element={<GeneratorComponent generatorData={generator} />}
+            />
+          ))}
         </Routes>
       </div>
     </Router>
