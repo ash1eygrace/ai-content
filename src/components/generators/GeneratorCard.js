@@ -10,8 +10,8 @@ const GeneratorCard = ({ generator }) => (
             <Card.Body>
                 <Card.Text>
                     {generator.description}
-                    <Button href={generator.link}>{generator.title}</Button>
                 </Card.Text>
+                <Button href={generator.link}>{generator.title}</Button>
             </Card.Body>
         </Card>
     </Col>
