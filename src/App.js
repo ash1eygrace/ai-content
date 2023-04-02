@@ -1,6 +1,6 @@
 import './App.css';
 import 'react-bootstrap/dist/react-bootstrap.min.js';
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navigation from './components/common/Navigation';
@@ -9,11 +9,14 @@ import Generators from './components/generators/Generators';
 import GeneratorComponent from './components/generators/Generator';
 
 import { generatorList } from './data/generatorList';
+import ThemeContext from './components/common/ThemeContext';
 
 function App() {
+  const { isDarkMode } = useContext(ThemeContext);
+
   return (
     <Router>
-      <div className="App">
+      <div className={`App${isDarkMode ? ' dark-mode' : ''}`}>
         <Navigation />
         <Routes>
           <Route path="/" exact element={<Home />} />
