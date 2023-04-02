@@ -14,6 +14,7 @@ body {
 h1{
   font-size: 2.3rem;
   text-align: center; 
+  padding-bottom:5%;
 }
 h2{
 	font-size: 1.37rem;
@@ -21,24 +22,11 @@ h2{
 p{
 	font-size: 1.2rem;
 }
-#main-content{
+#main{
   margin-top: 6%;
   color: #242325;
 }
-.btn:hover{
-  box-shadow: 1px 1px 2px rgba(74, 48, 89, .4);
-  cursor: pointer;
-	color: #F8F7F9;
-	background-color: #dc7684;
-}
-.btn-primary{
-  padding-top: 4%;
-  padding-bottom: 4%;
-  background-color: #5cb0a2;
-  border: none;
-  float: right;
-  min-width: 100%;
-}
+/* Nav*/
 #navigation{
   background-color: #8484c3;
   padding: 1%;
@@ -46,28 +34,7 @@ p{
 .navbar-light .navbar-nav .nav-link, .navbar-nav a.navbar-brand{
   color: #F8F7F9;
 }
-label.form-label{
-  font-weight: bold;
-} 
-#pageDescription{
-  padding-bottom: 10%;
-}
-textarea{
-  resize: none;
-}
-.card-header{
-  padding-top: 4%;
-  padding-bottom: 4%;
-  background-color: #8484c3;
-  color: #F8F7F9;
-}
-.card{
-  background-color: white;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, .22);
-  min-height: 79vh;
-  min-height: 100%;
-  border-radius: 0.25rem;
-}
+/*Home Page*/
 #hero{
   padding-top: 5%;
   padding-bottom: 3%;
@@ -82,30 +49,23 @@ textarea{
   padding-right: 14%;
   padding-bottom: 8%;
 }
-.col-sm-6{
-  margin-bottom: 20px;
-}
-.col-sm-6 .card p{
-  margin-top: 35px;
-  margin-bottom: 45px;
-}
 img.logo{
   max-width: 204px;
   border-radius: 9999px;
 }
-/* generators page */
-#generators{
-  padding-top: 5%;
-  padding-bottom: 5%;
+/*Generator*/
+#pageDescription{
+  padding-bottom: 10%;
 }
-#generators h1{
-  padding-bottom: 5%;
+textarea{
+  resize: none;
 }
-
+label.form-label{
+  font-weight: bold;
+} 
 .pre-wrap{
   white-space: pre-wrap;
 }
-
 .copy-button {
   color: #fff;
   background-color: #5cb0a2;
@@ -113,7 +73,42 @@ img.logo{
   bottom: 10px;
   right: 10px;
 }
-
 .response-container {
   margin-bottom: 60px;;
+}
+/* Buttons */
+.btn:hover{
+  box-shadow: 1px 1px 2px rgba(74, 48, 89, .4);
+  cursor: pointer;
+	color: #F8F7F9;
+	background-color: #dc7684;
+}
+.btn-primary{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #5cb0a2;
+  border: none;
+  float: right;
+  min-width: 100%;
+}
+/*Cards*/
+.card-header{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #8484c3;
+  color: #F8F7F9;
+}
+.card{
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .22);
+  min-height: 79vh;
+  min-height: 100%;
+  border-radius: 0.25rem;
+}
+.col-sm-6{
+  margin-bottom: 20px;
+}
+.col-sm-6 .card p{
+  margin-top: 35px;
+  margin-bottom: 45px;
 }
