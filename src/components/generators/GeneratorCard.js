@@ -9,7 +9,7 @@ const GeneratorCard = ({ generator }) => (
             </Card.Header>
             <Card.Body>
                 <Card.Text>
-                    <p>{generator.description}</p>
+                    {generator.description}
                     <Button href={generator.link}>{generator.title}</Button>
                 </Card.Text>
             </Card.Body>
