@@ -4,7 +4,7 @@
 
 To generate website, product copy, and brianstorm ideas with OpenAI's Generative Pre-trained Transformer 3 (GPT-3) an autoregressive language model that uses deep learning to produce human-like text.
 
-https://user-images.githubusercontent.com/29527450/229373842-d9e8182f-a0e7-4136-a040-b736db8e34fc.mov
+![ai-app-theme-options](https://user-images.githubusercontent.com/29527450/229376018-b5950288-cd76-407b-8a25-9649da34327c.jpg)
 
 
 ## Getting Started 🛠️: 
@@ -80,6 +80,9 @@ ai-content
 - SEO Blog Intro Paragraph Generator
 - LinkedIn Job Description Generator
 - TL;DR Text SummarizerGenerator
+
+https://user-images.githubusercontent.com/29527450/229373842-d9e8182f-a0e7-4136-a040-b736db8e34fc.mov
+
 
 ## Examples: 
 
