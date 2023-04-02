@@ -4,7 +4,7 @@
 
 To generate website, product copy, and brianstorm ideas with OpenAI's Generative Pre-trained Transformer 3 (GPT-3) an autoregressive language model that uses deep learning to produce human-like text.
 
-![ai-app-theme-options](https://user-images.githubusercontent.com/29527450/229376018-b5950288-cd76-407b-8a25-9649da34327c.jpg)
+![theme croped](https://user-images.githubusercontent.com/29527450/229385033-67441a4b-77e5-48a5-a570-f27620d62892.jpg)
 
 
 ## Getting Started 🛠️: 
