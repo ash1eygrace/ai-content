@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container, Card, Row, Col, Button } from 'react-bootstrap'
-import { GeneratorList } from '../../data/GeneratorList';
+import { generatorList } from '../../data/generatorList';
 
 function RenderGenerators() {
-    const Generator = GeneratorList.map((generator) => {
+    const Generator = generatorList.map((generator) => {
         return ( 
             <Col sm={6}>
                 <Card className="text-center">

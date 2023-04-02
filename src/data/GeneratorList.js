@@ -1,4 +1,4 @@
-export const GeneratorList = [
+export const generatorList = [
     {
         id: 1,
         title: 'Blog Post Ideas',

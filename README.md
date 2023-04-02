@@ -39,26 +39,30 @@ ai-content
 │   └── manifest.json
 ├── src
 │   ├── assets
-│   │   └──images
-│   │      └── logo.png
+│   │   └── images
+│   │       └── logo.png
 │   ├── components
-│   │   ├── BlogIdeas.js
-│   │   ├── BlogIntro.js
-│   │   ├── CompanyBio.js
-│   │   ├── Generators.js
-│   │   ├── Home.js
-│   │   ├── LinkedInJobDescription.js
-│   │   ├── Navigation.js
-│   │   ├── OpenAIAPI.js
-│   │   ├── ProductDescription.js
-│   │   └── Tldr.js
+│   │   ├── common
+│   │   │   ├── CopyToClipboard.js
+│   │   │   ├── LoadingSpinner.js
+│   │   │   └── Navigation.js
+│   │   ├── generators
+│   │   │   ├── Generator.js
+│   │   │   └── GeneratorCard.js
+│   │   ├── api
+│   │   │   └── OpenAIAPI.js
+│   │   └── pages
+│   │       └── Home.js
+│   ├── data
+│   │   └── generatorList.js
 │   ├── App.css
 │   ├── App.js
-│   ├── Index.css
-│   └── Index.js
+│   ├── index.css
+│   └── index.js
 ├── .gitignore
 ├── package.json
 └── README.md
+
 ```
 
 ## Current app features ✨
