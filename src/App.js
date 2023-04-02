@@ -10,7 +10,6 @@ import GeneratorComponent from './components/generators/Generator';
 
 import { generatorList } from './data/generatorList';
 import { ThemeContext } from './components/common/ThemeContext';
-import ThemeToggle from './components/common/ThemeToggle';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
