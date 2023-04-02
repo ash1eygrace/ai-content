@@ -5,7 +5,7 @@ import GeneratorCard from './GeneratorCard';
 
 function Generators() {
     return (
-        <div id="generators">
+        <div id="main" className='generators'>
             <h1>Content Generators</h1>
             <Container>
                 <Row id="list-generators">

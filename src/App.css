@@ -94,11 +94,11 @@ img.logo{
   border-radius: 9999px;
 }
 /* generators page */
-#generators{
+.generators{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-#generators h1{
+.generators h1{
   padding-bottom: 5%;
 }
 
