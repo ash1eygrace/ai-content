@@ -4,8 +4,7 @@
 
 To generate website, product copy, and brianstorm ideas with OpenAI's Generative Pre-trained Transformer 3 (GPT-3) an autoregressive language model that uses deep learning to produce human-like text.
 
-
-https://user-images.githubusercontent.com/29527450/187236104-233cbfe6-fe08-48fe-81f7-646d72d3cf0c.mp4
+https://user-images.githubusercontent.com/29527450/229373842-d9e8182f-a0e7-4136-a040-b736db8e34fc.mov
 
 
 ## Getting Started 🛠️: 
@@ -16,9 +15,11 @@ https://user-images.githubusercontent.com/29527450/187236104-233cbfe6-fe08-48fe-
 - [npm](https://npmjs.com)
 - [React](https://reactjs.org)
 - [React Bootstrap](https://react-bootstrap.github.io)
+- [Font Awesome](https://fontawesome.com/docs/web/use-with/react/)
 - [OpenAI's GPT-3 autoregressive language model](https://openai.com/)
 
-### Installation: 
+### Development:
+
 1. Fork and clone this repo
 3. In Terminal open the directory ai-content
 4. Check that Node.js is installed via Terminal by typing `node -v` if you don’t see a version [Install Node.js](https://nodejs.org/en/ )
@@ -42,15 +43,19 @@ ai-content
 │   │   └── images
 │   │       └── logo.png
 │   ├── components
+│   │   ├── api
+│   │   │   └── OpenAIAPI.js
 │   │   ├── common
 │   │   │   ├── CopyToClipboard.js
+│   │   │   ├── LoadingSpinner.js
+│   │   │   ├── ThemeContext.js
+│   │   │   ├── ThemeToggle.js
 │   │   │   ├── LoadingSpinner.js
 │   │   │   └── Navigation.js
 │   │   ├── generators
 │   │   │   ├── Generator.js
-│   │   │   └── GeneratorCard.js
-│   │   ├── api
-│   │   │   └── OpenAIAPI.js
+│   │   │   ├── GeneratorCard.js 
+│   │   │   └── Generators.js
 │   │   └── pages
 │   │       └── Home.js
 │   ├── data
@@ -68,36 +73,38 @@ ai-content
 ## Current app features ✨
 
 - Navigation
-- Generators List Page 
+- Theme toggle for dark and light modes
+- Blog Post Ideas Generator
 - Product Description Generator
 - Company Bio Generator
-- Blog Intro Paragraph Generator
+- SEO Blog Intro Paragraph Generator
 - LinkedIn Job Description Generator
-- TL;DR text summarizer
-- One async function to call OpenAPI
+- TL;DR Text SummarizerGenerator
 
 ## Examples: 
 
-### Product Description Generator 🛒
+### Themes ✨
 
-1. Asks end-user to enter a product name and Purpose in a form and user clicks submit.
-2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
-3. OpenAI's API sends a response, and the app displays response from the API on page for the user.
+- The app features two themes: a dark theme and a light theme for your preference.
+- Switching between themes is easy - just click the toggle button in the navigation bar. The moon ☽ icon indicates the dark theme, while the sun ☀️ icon represents the light theme.
+- Your chosen theme will be saved in local storage, so you won't have to select it again as you navigate around the app.
 
-https://user-images.githubusercontent.com/29527450/163480646-4aaf9b7a-d867-42a3-9a63-1a09a7fad760.mov
+https://user-images.githubusercontent.com/29527450/229374056-fbd30eb7-d640-4187-8a18-cb2939c16b77.mov
 
-### Company Bio Generator 🛒
 
-1. Asks end-user to enter a Company name and Purpose in a form and user clicks submit.
-2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
-3. OpenAI's API sends a response, and the app displays response from the API on page for the user.
+### Generators ♺
 
-https://user-images.githubusercontent.com/29527450/163480671-97f0698c-4b28-4d27-9d52-4bdc9b350d96.mov
+- The app dynamically displays each generator from an array of data via routes, making it easy to add new generators in one data file.
+- Each generator prompts the user for input via a form, based on the generator.
+- When the user submits their prompt, their prompt is concatenated with a predefined context string for the generator that's defined in the data to produce the best response from GPT.
+- While waiting for a response, state changes to show a Loading spinner, and the card header title indicates that the app is thinking.
+- Once OpenAI sends a response, state changes to show a new card header title, the body of the response from OpenAI, and a copy to clipboard button for easy copying.
+- The copy to clipboard button changes to a "copied" state and back to the clipboard copy button after a few seconds, making it easy to copy the response multiple times if necessary.
 
-### SEO Optimized Blog Intro Paragraph Generator 💻📝
+#### Product Description Generator 🛒
 
-1. Asks end-user to input a blog post title and keywords separated by commas, and user click submit.
-2. App sends a prompt OpenAI's Completion Model using a predefined string with the user's variable input from the form.
-3. OpenAI's API sends a response, and the app displays a response from the API for the user.
+https://user-images.githubusercontent.com/29527450/229372828-b4b30c1f-be9e-494c-a108-628b52ec6220.mov
 
-https://user-images.githubusercontent.com/29527450/163480705-baf4bc60-1817-4a38-b06d-7232cfffbe8e.mov
+#### Company Bio Generator 🛒
+
+https://user-images.githubusercontent.com/29527450/229372925-72b03169-a992-4dd7-8a4a-33f512395005.mov
