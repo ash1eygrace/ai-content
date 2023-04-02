@@ -1,12 +1,11 @@
 import React from 'react'
-import { Container, Card, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import Logo from '../../assets/images/logo.png'
 import { generatorList } from '../../data/generatorList';
+import GeneratorCard from '../generators/GeneratorCard';
 
 const Home = () => {
-    const featuredGenerators = generatorList.filter(
-        (generator) => generator.featured
-    );
+    const featuredGenerators = generatorList.filter((generator) => generator.featured);
 
     return (
         <div>
@@ -19,19 +18,7 @@ const Home = () => {
             <Container>
                 <Row>
                     {featuredGenerators.map((generator) => (
-                        <Col sm={6} key={generator.id}>
-                            <Card className="text-center">
-                                <Card.Header>
-                                    <h2>{generator.title}</h2>
-                                </Card.Header>
-                                <Card.Body>
-                                    <Card.Text>
-                                        <p>{generator.description}</p>
-                                        <Button href={generator.link}>{generator.title}</Button>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                        <GeneratorCard key={generator.id} generator={generator} />
                     ))}
                 </Row>
             </Container>

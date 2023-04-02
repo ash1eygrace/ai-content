@@ -1,37 +1,18 @@
-import React from 'react'
-import { Container, Card, Row, Col, Button } from 'react-bootstrap'
+import React from 'react';
+import { Container, Row } from 'react-bootstrap';
 import { generatorList } from '../../data/generatorList';
-
-function RenderGenerators() {
-    const Generator = generatorList.map((generator) => {
-        return ( 
-            <Col sm={6}>
-                <Card className="text-center">
-                    <Card.Header><h2>{generator.title}</h2></Card.Header>
-                    <Card.Body>
-                        <Card.Text>
-                        <p>{generator.description}</p>
-                        <Button href={generator.link}>{generator.title}</Button>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            </Col>
-        );
-    }
-    );
-    return (
-        <Row id="list-generators">
-            {Generator}
-        </Row>
-    );
-}
+import GeneratorCard from './GeneratorCard';
 
 function Generators() {
     return (
         <div id="generators">
             <h1>Content Generators</h1>
             <Container>
-                <RenderGenerators />
+                <Row id="list-generators">
+                    {generatorList.map((generator) => (
+                        <GeneratorCard key={generator.id} generator={generator} />
+                    ))}
+                </Row>
             </Container>
         </div>
     );
