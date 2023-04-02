@@ -49,8 +49,9 @@ p {
 #main {
   background-color: var(--background-color);
   padding: 6%;
-  height: 100vh;
+  min-height: 100vh;
   color: var(--text-color);
+  height:auto
 }
 /* Nav*/
 #navigation {
