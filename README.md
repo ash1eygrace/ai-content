@@ -60,6 +60,8 @@ ai-content
 │   │       └── Home.js
 │   ├── data
 │   │   └── generatorList.js
+│   ├── hooks
+│   │   └── useTypingEffect.js
 │   ├── App.css
 │   ├── App.js
 │   ├── index.css
