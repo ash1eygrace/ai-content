@@ -4,6 +4,8 @@ import { callAPI } from '../api/OpenAIAPI.js';
 
 import CopyToClipboard from '../common/CopyToClipboard.js';
 import LoadingSpinner from '../common/LoadingSpinner.js';
+import useTypingEffect from '../../hooks/useTypingEffect.js';
+
 
 const initialState = {
   heading: 'AI Generated Response:',
@@ -33,6 +35,9 @@ function reducer(state, action) {
 const GeneratorComponent = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const typingSpeed = 50;
+  const responseWithTypingEffect = useTypingEffect(state.response, typingSpeed);
+
   const onFormSubmit = (e) => {
     e.preventDefault();
 
@@ -56,7 +61,6 @@ const GeneratorComponent = (props) => {
   };
 
   const { title, description2, formLabel, formName, placeholder } = props.generatorData;
-
 
   return (
     <div id="main">
@@ -91,7 +95,7 @@ const GeneratorComponent = (props) => {
                       (
                         <div className="response-container">
                           <Card.Text>
-                            <p className="pre-wrap">{state.response}</p>
+                            <p className="pre-wrap">{responseWithTypingEffect}</p>
                           </Card.Text>
                           {state.response && <CopyToClipboard text={state.response} />}
                         </div>
