@@ -32,7 +32,7 @@ function reducer(state, action) {
   }
 }
 
-const GeneratorComponent = (props) => {
+const GeneratorComponent = ({generatorData}) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const typingSpeed = 50;
@@ -42,9 +42,9 @@ const GeneratorComponent = (props) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    const prompt = `${props.generatorData.prompt}${formData.get(props.generatorData.formName)}`;
+    const prompt = `${generatorData.prompt}${formData.get(generatorData.formName)}`;
 
-    dispatch({ type: 'SET_HEADING', payload: `Thinking about your ${props.generatorData.title} now...` });
+    dispatch({ type: 'SET_HEADING', payload: `Thinking about your ${generatorData.title} now...` });
     dispatch({ type: 'SET_RESPONSE', payload: '' });
     dispatch({ type: 'SET_ERROR_MESSAGE', payload: '' });
     dispatch({ type: 'SET_IS_FORM_SUBMITTED', payload: true });
@@ -53,14 +53,14 @@ const GeneratorComponent = (props) => {
       if (data.error) {
         dispatch({ type: 'SET_ERROR_MESSAGE', payload: data.message });
       } else {
-        dispatch({ type: 'SET_HEADING', payload: `Your AI Generated ${props.generatorData.title}:` });
+        dispatch({ type: 'SET_HEADING', payload: `Your AI Generated ${generatorData.title}:` });
         dispatch({ type: 'SET_RESPONSE', payload: data });
       }
       dispatch({ type: 'SET_DATA_LOADED', payload: true });
     });
   };
 
-  const { title, description2, formLabel, formName, placeholder } = props.generatorData;
+  const { title, description2, formLabel, formName, placeholder } = generatorData;
 
   return (
     <div id="main">
