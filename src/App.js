@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './components/common/Navigation';
 import Home from './components/pages/Home';
 import Generators from './components/generators/Generators';
-import GeneratorComponent from './components/generators/Generator';
+import Generator from './components/generators/Generator';
 
 import { generatorList } from './data/generatorList';
 import { ThemeContext } from './components/common/ThemeContext';
@@ -34,7 +34,7 @@ function App() {
               <Route
                 key={generator.id}
                 path={`/${generator.link}`}
-                element={<GeneratorComponent generatorData={generator} />}
+                element={<Generator generatorData={generator} />}
               />
             ))}
           </Routes>
