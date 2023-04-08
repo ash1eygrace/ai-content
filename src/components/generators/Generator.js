@@ -32,7 +32,7 @@ function reducer(state, action) {
   }
 }
 
-const GeneratorComponent = ({generatorData}) => {
+const Generator = ({generatorData}) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const typingSpeed = 50;
@@ -119,4 +119,4 @@ const GeneratorComponent = ({generatorData}) => {
   );
 };
 
-export default GeneratorComponent;
+export default Generator;
