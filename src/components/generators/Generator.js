@@ -107,8 +107,8 @@ const Generator = ({ generatorData }) => {
                     : state.dataLoaded && state.response ?
                       (
                         <div className="response-container">
-                          <Card.Text>
-                            <p className="pre-wrap">{responseWithTypingEffect}</p>
+                          <Card.Text as="div" className="pre-wrap">
+                            {responseWithTypingEffect}
                           </Card.Text>
                           {state.response && <CopyToClipboard text={state.response} />}
                         </div>
