@@ -38,7 +38,7 @@ const Generator = ({ generatorData }) => {
   const typingSpeed = 50;
   const responseWithTypingEffect = useTypingEffect(state.response, typingSpeed);
 
-  const onFormSubmit = (e) => {
+  const onFormSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
@@ -49,22 +49,29 @@ const Generator = ({ generatorData }) => {
     dispatch({ type: 'SET_ERROR_MESSAGE', payload: '' });
     dispatch({ type: 'SET_IS_FORM_SUBMITTED', payload: true });
     dispatch({ type: 'SET_DATA_LOADED', payload: false });
-    callAPI(prompt, {
-      temperature: generatorData.temperature,
-      max_tokens: generatorData.max_tokens,
-      top_p: generatorData.top_p,
-      frequency_penalty: generatorData.frequency_penalty,
-      presence_penalty: generatorData.presence_penalty,
-    }).then((data) => {
+
+    try {
+      const data = await callAPI(prompt, {
+        temperature: generatorData.temperature,
+        max_tokens: generatorData.max_tokens,
+        top_p: generatorData.top_p,
+        frequency_penalty: generatorData.frequency_penalty,
+        presence_penalty: generatorData.presence_penalty,
+      });
+
       if (data.error) {
         dispatch({ type: 'SET_ERROR_MESSAGE', payload: data.message });
       } else {
         dispatch({ type: 'SET_HEADING', payload: `Your AI Generated ${generatorData.title}:` });
         dispatch({ type: 'SET_RESPONSE', payload: data });
       }
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
       dispatch({ type: 'SET_DATA_LOADED', payload: true });
-    });
+    }
   };
+
 
   const { title, description2, formLabel, formName, placeholder } = generatorData;
 
