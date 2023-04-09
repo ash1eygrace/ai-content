@@ -9,7 +9,12 @@ export const generatorList = [
         description2: 'Enter your your content topic to generate a list of blog post ideas.',
         formLabel: 'Topic:',
         formName: 'topic',
-        placeholder: 'e.g. Finance'
+        placeholder: 'e.g. Finance',
+        temperature: 0.6,
+        max_tokens: 150,
+        top_p: 1,
+        frequency_penalty: 1,
+        presence_penalty: 1,
     },
     {
         id: 2,
@@ -21,7 +26,12 @@ export const generatorList = [
         description2: 'Enter your your product and a few keywords to include in your output. Click Submit and get a product description generated for you by AI. Think less and sell more.',
         formLabel: 'Product Name & Purpose:',
         formName: 'productName',
-        placeholder: 'e.g. ScoobySnacks will make your dog chill out'
+        placeholder: 'e.g. ScoobySnacks will make your dog chill out',
+        temperature: 0.6,
+        max_tokens: 150,
+        top_p: 1,
+        frequency_penalty: 1,
+        presence_penalty: 1,
     },
     {
         id: 3,
@@ -33,7 +43,12 @@ export const generatorList = [
         description2: 'Enter your company name and a few keywords that you\'d like to include in your output. Click Submit and get a company bio generated for you by AI. Think less and sell more.',
         formLabel: 'Company Name & Purpose:',
         formName: 'companyName',
-        placeholder: 'e.g. Dunder Mifflin the best paper company '
+        placeholder: 'e.g. Dunder Mifflin the best paper company ',
+        temperature: 0.6,
+        max_tokens: 150,
+        top_p: 1,
+        frequency_penalty: 1,
+        presence_penalty: 1,
     },
     {
         id: 4,
@@ -45,7 +60,12 @@ export const generatorList = [
         description2: 'Enter your blog posts title and SEO keywords that you\'d like to include in your output. Click Submit and get a blog post introduction paragraph generated for you by AI. Think less and publish more.',
         formLabel: 'Blog post title:',
         formName: 'blogTitle',
-        placeholder: 'e.g. How to Make a Commit with Git'
+        placeholder: 'e.g. How to Make a Commit with Git',
+        temperature: 0.6,
+        max_tokens: 150,
+        top_p: 1,
+        frequency_penalty: 1,
+        presence_penalty: 1,
     },
     {
         id: 5,
@@ -57,7 +77,12 @@ export const generatorList = [
         description2: 'Enter your your job title, click submit, and get a job description generated for you by AI.',
         formLabel: 'Job Title:',
         formName: 'jobTitle',
-        placeholder: 'e.g. Software Engineer specializing in AI'
+        placeholder: 'e.g. Software Engineer specializing in AI',
+        temperature: 0.6,
+        max_tokens: 150,
+        top_p: 1,
+        frequency_penalty: 1,
+        presence_penalty: 1,
     },
     {
         id: 6,
@@ -69,6 +94,11 @@ export const generatorList = [
         description2: 'Enter your your verbose text, click submit, and get a TL;DR generated for you by AI.',
         formLabel: 'Paragraph:',
         formName: 'longParagraph',
-        placeholder: 'paste your text here'
+        placeholder: 'paste your text here',
+        temperature: 0.6,
+        max_tokens: 150,
+        top_p: 1,
+        frequency_penalty: 1,
+        presence_penalty: 1,
     }
 ];

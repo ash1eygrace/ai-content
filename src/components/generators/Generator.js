@@ -32,7 +32,7 @@ function reducer(state, action) {
   }
 }
 
-const Generator = ({generatorData}) => {
+const Generator = ({ generatorData }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const typingSpeed = 50;
@@ -49,7 +49,13 @@ const Generator = ({generatorData}) => {
     dispatch({ type: 'SET_ERROR_MESSAGE', payload: '' });
     dispatch({ type: 'SET_IS_FORM_SUBMITTED', payload: true });
     dispatch({ type: 'SET_DATA_LOADED', payload: false });
-    callAPI(prompt).then((data) => {
+    callAPI(prompt, {
+      temperature: generatorData.temperature,
+      max_tokens: generatorData.max_tokens,
+      top_p: generatorData.top_p,
+      frequency_penalty: generatorData.frequency_penalty,
+      presence_penalty: generatorData.presence_penalty,
+    }).then((data) => {
       if (data.error) {
         dispatch({ type: 'SET_ERROR_MESSAGE', payload: data.message });
       } else {
