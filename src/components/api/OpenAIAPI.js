@@ -23,7 +23,6 @@ export async function callAPI(prompt, options) {
     return data.output.choices[0].text;
   } catch (error) {
     console.log(error);
-    console.log("error");
     return {
       error: true,
       message:
