@@ -1,0 +1,45 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "README.md"
+      - ".gitignore"
+      - ".prettierrc"
+      - ".eslintrc.json"
+      - "package.json"
+      - "package-lock.json"
+      - "jsconfig.json"
+      - ".github/**"
+      - ".screenshots/**"
+
+permissions: write-all
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to production
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.IP_ADDRESS }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ${{ secrets.PRODUCTION_PATH }}
+            git checkout main
+            git pull
+            npm i
+            npm run build
+            cd ${{ secrets.PRODUCTION_API_PATH }}
+            npm i
+            pm2 restart ${{ secrets.PRODUCTION_NAME }}
+
+      - name: Publish Summary
+        if: success()
+        run: echo -e "Production Deployment Successful!" >> $GITHUB_STEP_SUMMARY
