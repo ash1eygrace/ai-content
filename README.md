@@ -20,18 +20,32 @@ To generate website, product copy, and brianstorm ideas with OpenAI's Generative
 
 ### Development:
 
-1. Fork and clone this repo
-3. In Terminal open the directory ai-content
-4. Check that Node.js is installed via Terminal by typing `node -v` if you don’t see a version [Install Node.js](https://nodejs.org/en/ )
-6. Type `npm install` to install any missing dependences. 
-7. Type `npm start` to open the app via http://localhost:3000/
-8. Obtain your [OpenAI API key](https://openai.com/api/) via Log In > Personal > API keys > Create and Copy your Secret Key. 
-9. In root add a `.env` file with an API key variable REACT_APP_API_KEY. e.g `REACT_APP_API_KEY='your api key here'`
+This repository is set up to run on a VPS with an express backend, to run it locally do the following: 
+
+1.  Fork and clone this repo
+2.  In Terminal open the directory ai-content
+3.  Check that Node.js is installed via Terminal by typing `node -v` if you don’t see a version [Install Node.js](https://nodejs.org/en/)
+4. In the `ai-content` directory type `npm install` to install any missing dependences.
+5. cd into the `ai-content/api` directory and type `npm install` to install any missing dependences.
+6.  Obtain your [OpenAI API key](https://openai.com/api/) via Log In > Personal > API keys > Create and Copy your Secret Key.
+7.  In the `ai-content/api` directory add a `.env` file with an API key variable and the port for the backend: 
+```
+   API_KEY=abc123yourapikey
+   PORT=6001
+```
+8. In Terminal cd into the `ai-content/api` directory and `npm start`
+9. finally, in Terminal cd in the ai-content directory and `npm start`
 
 ## Structure: 
 
 ```
 ai-content
+├── api
+│   ├── node_modules
+│   ├── .env // Your API key goes here
+│   ├── index.js
+│   ├── package-lock.json
+│   └── package.json
 ├── node_modules
 ├── public
 │   ├── _redirects
