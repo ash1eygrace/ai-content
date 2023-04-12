@@ -11,7 +11,14 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/api/ai-content", async (req, res) => {
-  const { prompt } = req.body;
+  const {
+    prompt,
+    temperature,
+    max_tokens,
+    top_p,
+    frequency_penalty,
+    presence_penalty,
+  } = req.body;
 
   const openAPICall = await fetch(`https://api.openai.com/v1/completions`, {
     method: "POST",
@@ -22,11 +29,11 @@ app.post("/api/ai-content", async (req, res) => {
     body: JSON.stringify({
       model: "text-davinci-002",
       prompt: prompt,
-      temperature: 0.6,
-      max_tokens: 150,
-      top_p: 1,
-      frequency_penalty: 1,
-      presence_penalty: 1,
+      temperature: temperature,
+      max_tokens: max_tokens,
+      top_p: top_p,
+      frequency_penalty: frequency_penalty,
+      presence_penalty: presence_penalty,
     }),
   });
 
