@@ -22,9 +22,9 @@ To generate website, product copy, and brianstorm ideas with OpenAI's Generative
 
 This repository is set up to run on a VPS with an express backend, to run it locally do the following: 
 
-1.  Fork and clone this repo
-2.  In Terminal open the directory ai-content
-3.  Check that Node.js is installed via Terminal by typing `node -v` if you don’t see a version [Install Node.js](https://nodejs.org/en/)
+1.  Fork and clone this repo.
+2.  In Terminal, open the directory ai-content.
+3.  Check that Node.js is installed by opening Terminal and typing `node -v` if you don’t see a version [Install Node.js](https://nodejs.org/en/)
 4. In the `ai-content` directory type `npm install` to install any missing dependences.
 5. cd into the `ai-content/api` directory and type `npm install` to install any missing dependences.
 6.  Obtain your [OpenAI API key](https://openai.com/api/) via Log In > Personal > API keys > Create and Copy your Secret Key.
